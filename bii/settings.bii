@@ -1,0 +1,2 @@
+cpp: {generator: MinGW Makefiles}
+os: {arch: 32bit, family: Windows, subfamily: '8', version: 6.2.9200}
