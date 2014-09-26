@@ -169,7 +169,7 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Dependencies for the target
-manu343726_sfml_LIB_DEPENDS:STATIC=general;sfml-system-lib-NOTFOUND;
+manu343726_sfml_LIB_DEPENDS:STATIC=general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-system.so;
 
 //Value Computed by CMake
 sfml-biicode_BINARY_DIR:STATIC=/home/manu343726/Documentos/sfml-biicode/build
@@ -178,7 +178,7 @@ sfml-biicode_BINARY_DIR:STATIC=/home/manu343726/Documentos/sfml-biicode/build
 sfml-biicode_SOURCE_DIR:STATIC=/home/manu343726/Documentos/sfml-biicode/cmake
 
 //Path to a library.
-sfml-system-lib:FILEPATH=sfml-system-lib-NOTFOUND
+sfml-system-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-system.so
 
 
 ########################

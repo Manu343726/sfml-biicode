@@ -64,16 +64,21 @@ target_include_directories(${BII_BLOCK_TARGETS} PUBLIC ${SFML_INCLUDE_PATH})
 
 
 
+SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 
+if (WIN32)
+    message(STATUS "Setting up for Win32 environment...")
 
-if(WIN32)
-    SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR})
-elseif(LINUX)
-	SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR})
-endif()
+    SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/win32)
+elseif (LINUX)
+    message(STATUS "Setting up for Unix 32 environment...")
 
-message(STATUS "manu343726/SFML binaries path: ${SFML_LIBS_PATH}")
+    SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/nix32)
+endif ()
+
+message(STATUS "manu343726/SFML current source dir: ${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS "manu343726/SFML binaries path ${SFML_LIBS_PATH}")
 
 #32 bit target please
 #target_compile_options(${BII_LIB_TARGET} PUBLIC "-m32" "-D__int128=unsigned long long")

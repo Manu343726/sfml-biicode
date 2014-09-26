@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/manu343726_sfml_blocktests_main.dir/main.cpp.o  -o /home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main -rdynamic ../sfml/libmanu343726_sfml.a /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-system.so -Wl,-rpath,/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib 

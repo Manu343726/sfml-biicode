@@ -1,0 +1,2 @@
+/usr/bin/ar cr libmanu343726_sfml.a  CMakeFiles/manu343726_sfml.dir/cmake_dummy.cpp.o
+/usr/bin/ranlib libmanu343726_sfml.a

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml_blocktests/main.cpp
+iostream
+-
+manu343726/SFML/Window.hpp
+/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml_blocktests/manu343726/SFML/Window.hpp
+
