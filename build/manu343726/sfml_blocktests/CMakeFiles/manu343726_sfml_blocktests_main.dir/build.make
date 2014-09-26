@@ -82,11 +82,11 @@ manu343726_sfml_blocktests_main_EXTERNAL_OBJECTS =
 C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: manu343726/sfml_blocktests/CMakeFiles/manu343726_sfml_blocktests_main.dir/main.cpp.obj
 C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: manu343726/sfml_blocktests/CMakeFiles/manu343726_sfml_blocktests_main.dir/build.make
 C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: manu343726/sfml/libmanu343726_sfml.a
-C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: /bin/libsfml-system-2.dll
-C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: /bin/libsfml-window-2.dll
-C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: /bin/libsfml-graphics-2.dll
-C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: /bin/libsfml-audio-2.dll
-C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: /bin/libsfml-network-2.dll
+C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: C:/Users/Manuel/Documents/GitHub/sfml-biicode/blocks/manu343726/sfml/bin/sfml-system-2.dll
+C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: C:/Users/Manuel/Documents/GitHub/sfml-biicode/blocks/manu343726/sfml/bin/sfml-window-2.dll
+C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: C:/Users/Manuel/Documents/GitHub/sfml-biicode/blocks/manu343726/sfml/bin/sfml-graphics-2.dll
+C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: C:/Users/Manuel/Documents/GitHub/sfml-biicode/blocks/manu343726/sfml/bin/sfml-audio-2.dll
+C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: C:/Users/Manuel/Documents/GitHub/sfml-biicode/blocks/manu343726/sfml/bin/sfml-network-2.dll
 C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: manu343726/sfml_blocktests/CMakeFiles/manu343726_sfml_blocktests_main.dir/objects1.rsp
 C:/Users/Manuel/Documents/GitHub/sfml-biicode/bin/manu343726_sfml_blocktests_main.exe: manu343726/sfml_blocktests/CMakeFiles/manu343726_sfml_blocktests_main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable C:\Users\Manuel\Documents\GitHub\sfml-biicode\bin\manu343726_sfml_blocktests_main.exe"

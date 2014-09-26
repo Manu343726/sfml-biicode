@@ -61,19 +61,42 @@ ADD_BIICODE_TARGETS()
 set(SFML_INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/..)
 target_include_directories(${BII_BLOCK_TARGETS} PUBLIC ${SFML_INCLUDE_PATH})
 
-if(WIN32)
-	SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SRC_DIR}/bin)
 
-	SET(SFML_LIBS ${SFML_LIBS_PATH}/libsfml-system-2.dll 
-		          ${SFML_LIBS_PATH}/libsfml-window-2.dll 
-		          ${SFML_LIBS_PATH}/libsfml-graphics-2.dll 
-		          ${SFML_LIBS_PATH}/libsfml-audio-2.dll 
-		          ${SFML_LIBS_PATH}/libsfml-network-2.dll)
+
+
+
+
+
+if(WIN32)
+	SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 elseif(LINUX)
-	SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SRC_DIR}/SFML/lib)
+	SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 endif()
 
-TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} ${SFML_LIBS} pthread)
+#32 bit target please
+target_compile_options(${BII_LIB_TARGET} PUBLIC "-m32" "-D__int128=unsigned long long")
+
+FIND_LIBRARY(sfml-system REQUIRED
+	         NAMES sfml-system
+	         PATHS ${SFML_LIBS_PATH})
+FIND_LIBRARY(sfml-window REQUIRED
+	         NAMES sfml-window
+	         PATHS ${SFML_LIBS_PATH})
+FIND_LIBRARY(sfml-graphics REQUIRED
+	         NAMES sfml-graphics
+	         PATHS ${SFML_LIBS_PATH})
+FIND_LIBRARY(sfml-audio REQUIRED
+	         NAMES sfml-audio
+	         PATHS ${SFML_LIBS_PATH})
+FIND_LIBRARY(sfml-network REQUIRED
+	         NAMES sfml-network
+	         PATHS ${SFML_LIBS_PATH})
+
+SET(SFML_LIBS ${sfml-system} ${sfml-window}
+	          ${sfml-graphics} ${sfml-audio}
+	          ${sfml-network})
+
+TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${SFML_LIBS})
 
 
 

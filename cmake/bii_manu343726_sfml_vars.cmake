@@ -3,34 +3,6 @@
 SET(BII_CREATE_LIB True)
 # All the source code files of this library
 SET(BII_LIB_SRC  Config.hpp
-			Graphics.hpp
-			Graphics/BlendMode.hpp
-			Graphics/CircleShape.hpp
-			Graphics/Color.hpp
-			Graphics/ConvexShape.hpp
-			Graphics/Drawable.hpp
-			Graphics/Export.hpp
-			Graphics/Font.hpp
-			Graphics/Glyph.hpp
-			Graphics/Image.hpp
-			Graphics/PrimitiveType.hpp
-			Graphics/Rect.hpp
-			Graphics/Rect.inl
-			Graphics/RectangleShape.hpp
-			Graphics/RenderStates.hpp
-			Graphics/RenderTarget.hpp
-			Graphics/RenderTexture.hpp
-			Graphics/RenderWindow.hpp
-			Graphics/Shader.hpp
-			Graphics/Shape.hpp
-			Graphics/Sprite.hpp
-			Graphics/Text.hpp
-			Graphics/Texture.hpp
-			Graphics/Transform.hpp
-			Graphics/Transformable.hpp
-			Graphics/Vertex.hpp
-			Graphics/VertexArray.hpp
-			Graphics/View.hpp
 			System.hpp
 			System/Clock.hpp
 			System/Err.hpp
