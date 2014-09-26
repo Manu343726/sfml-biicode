@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,8 +22,8 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_CONTEXTSETTINGS_HPP
-#define SFML_CONTEXTSETTINGS_HPP
+#ifndef sfml_CONTEXTSETTINGS_HPP
+#define sfml_CONTEXTSETTINGS_HPP
 
 
 namespace sf
@@ -67,7 +67,7 @@ struct ContextSettings
 } // namespace sf
 
 
-#endif // SFML_CONTEXTSETTINGS_HPP
+#endif // sfml_CONTEXTSETTINGS_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -76,10 +76,10 @@ struct ContextSettings
 ///
 /// ContextSettings allows to define several advanced settings
 /// of the OpenGL context attached to a window. All these
-/// settings have no impact on the regular SFML rendering
+/// settings have no impact on the regular sfml rendering
 /// (graphics module) -- except the anti-aliasing level, so
 /// you may need to use this structure only if you're using
-/// SFML as a windowing system for custom OpenGL rendering.
+/// sfml as a windowing system for custom OpenGL rendering.
 ///
 /// The depthBits and stencilBits members define the number
 /// of bits per pixel requested for the (respectively) depth
@@ -96,7 +96,7 @@ struct ContextSettings
 ///
 /// Please note that these values are only a hint.
 /// No failure will be reported if one or more of these values
-/// are not supported by the system; instead, SFML will try to
+/// are not supported by the system; instead, sfml will try to
 /// find the closest valid match. You can then retrieve the
 /// settings that the window actually used to create its context,
 /// with Window::getSettings().

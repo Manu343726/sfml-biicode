@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,16 +22,16 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_WINDOWHANDLE_HPP
-#define SFML_WINDOWHANDLE_HPP
+#ifndef sfml_WINDOWHANDLE_HPP
+#define sfml_WINDOWHANDLE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Config.hpp>
+#include <sfml/Config.hpp>
 
 // Windows' HWND is a typedef on struct HWND__*
-#if defined(SFML_SYSTEM_WINDOWS)
+#if defined(sfml_SYSTEM_WINDOWS)
     struct HWND__;
 #endif
 
@@ -41,17 +41,17 @@ namespace sf
 /// Define a low-level window handle type, specific to
 /// each platform
 ////////////////////////////////////////////////////////////
-#if defined(SFML_SYSTEM_WINDOWS)
+#if defined(sfml_SYSTEM_WINDOWS)
 
     // Window handle is HWND (HWND__*) on Windows
     typedef HWND__* WindowHandle;
 
-#elif defined(SFML_SYSTEM_LINUX) || defined(SFML_SYSTEM_FREEBSD)
+#elif defined(sfml_SYSTEM_LINUX) || defined(sfml_SYSTEM_FREEBSD)
 
     // Window handle is Window (unsigned long) on Unix - X11
     typedef unsigned long WindowHandle;
 
-#elif defined(SFML_SYSTEM_MACOS)
+#elif defined(sfml_SYSTEM_MACOS)
 
     // Window handle is NSWindow (void*) on Mac OS X - Cocoa
     typedef void* WindowHandle;
@@ -61,4 +61,4 @@ namespace sf
 } // namespace sf
 
 
-#endif // SFML_WINDOWHANDLE_HPP
+#endif // sfml_WINDOWHANDLE_HPP

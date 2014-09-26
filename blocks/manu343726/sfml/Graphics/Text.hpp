@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,19 +22,19 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_TEXT_HPP
-#define SFML_TEXT_HPP
+#ifndef sfml_TEXT_HPP
+#define sfml_TEXT_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Drawable.hpp>
-#include <SFML/Graphics/Transformable.hpp>
-#include <SFML/Graphics/Font.hpp>
-#include <SFML/Graphics/Rect.hpp>
-#include <SFML/Graphics/VertexArray.hpp>
-#include <SFML/System/String.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Drawable.hpp>
+#include <sfml/Graphics/Transformable.hpp>
+#include <sfml/Graphics/Font.hpp>
+#include <sfml/Graphics/Rect.hpp>
+#include <sfml/Graphics/VertexArray.hpp>
+#include <sfml/System/String.hpp>
 #include <string>
 #include <vector>
 
@@ -45,7 +45,7 @@ namespace sf
 /// \brief Graphical text that can be drawn to a render target
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API Text : public Drawable, public Transformable
+class sfml_GRAPHICS_API Text : public Drawable, public Transformable
 {
 public :
 
@@ -295,7 +295,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_TEXT_HPP
+#endif // sfml_TEXT_HPP
 
 
 ////////////////////////////////////////////////////////////

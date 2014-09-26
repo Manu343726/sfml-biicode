@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,18 +22,18 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_FONT_HPP
-#define SFML_FONT_HPP
+#ifndef sfml_FONT_HPP
+#define sfml_FONT_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Glyph.hpp>
-#include <SFML/Graphics/Texture.hpp>
-#include <SFML/Graphics/Rect.hpp>
-#include <SFML/System/Vector2.hpp>
-#include <SFML/System/String.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Glyph.hpp>
+#include <sfml/Graphics/Texture.hpp>
+#include <sfml/Graphics/Rect.hpp>
+#include <sfml/System/Vector2.hpp>
+#include <sfml/System/String.hpp>
 #include <map>
 #include <string>
 #include <vector>
@@ -47,7 +47,7 @@ class InputStream;
 /// \brief Class for loading and manipulating character fonts
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API Font
+class sfml_GRAPHICS_API Font
 {
 public :
 
@@ -98,7 +98,7 @@ public :
     ///
     /// The supported font formats are: TrueType, Type 1, CFF,
     /// OpenType, SFNT, X11 PCF, Windows FNT, BDF, PFR and Type 42.
-    /// Warning: SFML cannot preload all the font data in this
+    /// Warning: sfml cannot preload all the font data in this
     /// function, so the buffer pointed by \a data has to remain
     /// valid as long as the font is used.
     ///
@@ -117,7 +117,7 @@ public :
     ///
     /// The supported font formats are: TrueType, Type 1, CFF,
     /// OpenType, SFNT, X11 PCF, Windows FNT, BDF, PFR and Type 42.
-    /// Warning: SFML cannot preload all the font data in this
+    /// Warning: sfml cannot preload all the font data in this
     /// function, so the contents of \a stream have to remain
     /// valid as long as the font is used.
     ///
@@ -290,7 +290,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_FONT_HPP
+#endif // sfml_FONT_HPP
 
 
 ////////////////////////////////////////////////////////////

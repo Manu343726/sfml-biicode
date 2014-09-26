@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_JOYSTICK_HPP
-#define SFML_JOYSTICK_HPP
+#ifndef sfml_JOYSTICK_HPP
+#define sfml_JOYSTICK_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Window/Export.hpp>
+#include <sfml/Window/Export.hpp>
 
 
 namespace sf
@@ -37,7 +37,7 @@ namespace sf
 /// \brief Give access to the real-time state of the joysticks
 ///
 ////////////////////////////////////////////////////////////
-class SFML_WINDOW_API Joystick
+class sfml_WINDOW_API Joystick
 {
 public :
 
@@ -53,7 +53,7 @@ public :
     };
 
     ////////////////////////////////////////////////////////////
-    /// \brief Axes supported by SFML joysticks
+    /// \brief Axes supported by sfml joysticks
     ///
     ////////////////////////////////////////////////////////////
     enum Axis
@@ -132,7 +132,7 @@ public :
     ////////////////////////////////////////////////////////////
     /// \brief Update the states of all joysticks
     ///
-    /// This function is used internally by SFML, so you normally
+    /// This function is used internally by sfml, so you normally
     /// don't have to call it explicitely. However, you may need to
     /// call it if you have no window yet (or no window at all):
     /// in this case the joysticks states are not updated automatically.
@@ -144,7 +144,7 @@ public :
 } // namespace sf
 
 
-#endif // SFML_JOYSTICK_HPP
+#endif // sfml_JOYSTICK_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -167,7 +167,7 @@ public :
 /// moved, pressed or released when your window is out of focus
 /// and no event is triggered.
 ///
-/// SFML supports:
+/// sfml supports:
 /// \li 8 joysticks (sf::Joystick::Count)
 /// \li 32 buttons per joystick (sf::Joystick::ButtonCount)
 /// \li 8 axes per joystick (sf::Joystick::AxisCount)

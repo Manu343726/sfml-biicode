@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_RECT_HPP
-#define SFML_RECT_HPP
+#ifndef sfml_RECT_HPP
+#define sfml_RECT_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/System/Vector2.hpp>
+#include <sfml/System/Vector2.hpp>
 #include <algorithm>
 
 
@@ -184,7 +184,7 @@ bool operator ==(const Rect<T>& left, const Rect<T>& right);
 template <typename T>
 bool operator !=(const Rect<T>& left, const Rect<T>& right);
 
-#include <SFML/Graphics/Rect.inl>
+#include <sfml/Graphics/Rect.inl>
 
 // Create typedefs for the most common types
 typedef Rect<int>   IntRect;
@@ -193,7 +193,7 @@ typedef Rect<float> FloatRect;
 } // namespace sf
 
 
-#endif // SFML_RECT_HPP
+#endif // sfml_RECT_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -219,7 +219,7 @@ typedef Rect<float> FloatRect;
 /// don't intersect.
 ///
 /// sf::Rect is a template and may be used with any numeric type, but
-/// for simplicity the instanciations used by SFML are typedefed:
+/// for simplicity the instanciations used by sfml are typedefed:
 /// \li sf::Rect<int> is sf::IntRect
 /// \li sf::Rect<float> is sf::FloatRect
 ///

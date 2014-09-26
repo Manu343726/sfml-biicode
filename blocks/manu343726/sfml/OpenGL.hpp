@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,21 +22,21 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_OPENGL_HPP
-#define SFML_OPENGL_HPP
+#ifndef sfml_OPENGL_HPP
+#define sfml_OPENGL_HPP
 
 
 ////////////////////////////////////////////////////////////
 /// Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Config.hpp>
+#include <sfml/Config.hpp>
 
 
 ////////////////////////////////////////////////////////////
 /// This file just includes the OpenGL (GL and GLU) headers,
 /// which have actually different paths on each system
 ////////////////////////////////////////////////////////////
-#if defined(SFML_SYSTEM_WINDOWS)
+#if defined(sfml_SYSTEM_WINDOWS)
 
     // The Visual C++ version of gl.h uses WINGDIAPI and APIENTRY but doesn't define them
     #ifdef _MSC_VER
@@ -46,12 +46,12 @@
     #include <GL/gl.h>
     #include <GL/glu.h>
 
-#elif defined(SFML_SYSTEM_LINUX) || defined(SFML_SYSTEM_FREEBSD)
+#elif defined(sfml_SYSTEM_LINUX) || defined(sfml_SYSTEM_FREEBSD)
 
     #include <GL/gl.h>
     #include <GL/glu.h>
 
-#elif defined(SFML_SYSTEM_MACOS)
+#elif defined(sfml_SYSTEM_MACOS)
 
     #include <OpenGL/gl.h>
     #include <OpenGL/glu.h>
@@ -59,4 +59,4 @@
 #endif
 
 
-#endif // SFML_OPENGL_HPP
+#endif // sfml_OPENGL_HPP

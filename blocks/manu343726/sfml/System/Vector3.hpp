@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,8 +22,8 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_VECTOR3_HPP
-#define SFML_VECTOR3_HPP
+#ifndef sfml_VECTOR3_HPP
+#define sfml_VECTOR3_HPP
 
 
 namespace sf
@@ -249,7 +249,7 @@ bool operator ==(const Vector3<T>& left, const Vector3<T>& right);
 template <typename T>
 bool operator !=(const Vector3<T>& left, const Vector3<T>& right);
 
-#include <SFML/System/Vector3.inl>
+#include <sfml/System/Vector3.inl>
 
 // Define the most common types
 typedef Vector3<int>   Vector3i;
@@ -258,7 +258,7 @@ typedef Vector3<float> Vector3f;
 } // namespace sf
 
 
-#endif // SFML_VECTOR3_HPP
+#endif // sfml_VECTOR3_HPP
 
 
 ////////////////////////////////////////////////////////////

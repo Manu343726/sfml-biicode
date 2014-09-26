@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,22 +22,22 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_RENDERTARGET_HPP
-#define SFML_RENDERTARGET_HPP
+#ifndef sfml_RENDERTARGET_HPP
+#define sfml_RENDERTARGET_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Color.hpp>
-#include <SFML/Graphics/Rect.hpp>
-#include <SFML/Graphics/View.hpp>
-#include <SFML/Graphics/Transform.hpp>
-#include <SFML/Graphics/BlendMode.hpp>
-#include <SFML/Graphics/RenderStates.hpp>
-#include <SFML/Graphics/PrimitiveType.hpp>
-#include <SFML/Graphics/Vertex.hpp>
-#include <SFML/System/NonCopyable.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Color.hpp>
+#include <sfml/Graphics/Rect.hpp>
+#include <sfml/Graphics/View.hpp>
+#include <sfml/Graphics/Transform.hpp>
+#include <sfml/Graphics/BlendMode.hpp>
+#include <sfml/Graphics/RenderStates.hpp>
+#include <sfml/Graphics/PrimitiveType.hpp>
+#include <sfml/Graphics/Vertex.hpp>
+#include <sfml/System/NonCopyable.hpp>
 
 
 namespace sf
@@ -48,7 +48,7 @@ class Drawable;
 /// \brief Base class for all render targets (window, texture, ...)
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API RenderTarget : NonCopyable
+class sfml_GRAPHICS_API RenderTarget : NonCopyable
 {
 public :
 
@@ -258,11 +258,11 @@ public :
     ////////////////////////////////////////////////////////////
     /// \brief Save the current OpenGL render states and matrices
     ///
-    /// This function can be used when you mix SFML drawing
+    /// This function can be used when you mix sfml drawing
     /// and direct OpenGL rendering. Combined with PopGLStates,
     /// it ensures that:
-    /// \li SFML's internal states are not messed up by your OpenGL code
-    /// \li your OpenGL states are not modified by a call to a SFML function
+    /// \li sfml's internal states are not messed up by your OpenGL code
+    /// \li your OpenGL states are not modified by a call to a sfml function
     ///
     /// More specifically, it must be used around code that
     /// calls Draw functions. Example:
@@ -303,10 +303,10 @@ public :
     ////////////////////////////////////////////////////////////
     /// \brief Reset the internal OpenGL states so that the target is ready for drawing
     ///
-    /// This function can be used when you mix SFML drawing
+    /// This function can be used when you mix sfml drawing
     /// and direct OpenGL rendering, if you choose not to use
     /// pushGLStates/popGLStates. It makes sure that all OpenGL
-    /// states needed by SFML are set, so that subsequent draw()
+    /// states needed by sfml are set, so that subsequent draw()
     /// calls will work as expected.
     ///
     /// Example:
@@ -421,7 +421,7 @@ private:
 } // namespace sf
 
 
-#endif // SFML_RENDERTARGET_HPP
+#endif // sfml_RENDERTARGET_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -442,7 +442,7 @@ private:
 ///
 /// On top of that, render targets are still able to render direct
 /// OpenGL stuff. It is even possible to mix together OpenGL calls
-/// and regular SFML drawing commands. When doing so, make sure that
+/// and regular sfml drawing commands. When doing so, make sure that
 /// OpenGL states are not messed up by calling the
 /// pushGLStates/popGLStates functions.
 ///

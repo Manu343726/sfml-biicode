@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_THREAD_HPP
-#define SFML_THREAD_HPP
+#ifndef sfml_THREAD_HPP
+#define sfml_THREAD_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/System/Export.hpp>
-#include <SFML/System/NonCopyable.hpp>
+#include <sfml/System/Export.hpp>
+#include <sfml/System/NonCopyable.hpp>
 #include <cstdlib>
 
 
@@ -45,7 +45,7 @@ namespace priv
 /// \brief Utility class to manipulate threads
 ///
 ////////////////////////////////////////////////////////////
-class SFML_SYSTEM_API Thread : NonCopyable
+class sfml_SYSTEM_API Thread : NonCopyable
 {
 public :
 
@@ -190,11 +190,11 @@ private :
     priv::ThreadFunc* m_entryPoint; ///< Abstraction of the function to run
 };
 
-#include <SFML/System/Thread.inl>
+#include <sfml/System/Thread.inl>
 
 } // namespace sf
 
-#endif // SFML_THREAD_HPP
+#endif // sfml_THREAD_HPP
 
 
 ////////////////////////////////////////////////////////////

@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,8 +22,8 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_PRIMITIVETYPE_HPP
-#define SFML_PRIMITIVETYPE_HPP
+#ifndef sfml_PRIMITIVETYPE_HPP
+#define sfml_PRIMITIVETYPE_HPP
 
 namespace sf
 {
@@ -50,4 +50,4 @@ enum PrimitiveType
 } // namespace sf
 
 
-#endif // SFML_PRIMITIVETYPE_HPP
+#endif // sfml_PRIMITIVETYPE_HPP

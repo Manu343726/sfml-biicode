@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,8 +22,8 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_WINDOWSTYLE_HPP
-#define SFML_WINDOWSTYLE_HPP
+#ifndef sfml_WINDOWSTYLE_HPP
+#define sfml_WINDOWSTYLE_HPP
 
 
 namespace sf
@@ -50,4 +50,4 @@ namespace Style
 } // namespace sf
 
 
-#endif // SFML_WINDOWSTYLE_HPP
+#endif // sfml_WINDOWSTYLE_HPP

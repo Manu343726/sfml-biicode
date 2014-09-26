@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,15 +22,15 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_TRANSFORM_HPP
-#define SFML_TRANSFORM_HPP
+#ifndef sfml_TRANSFORM_HPP
+#define sfml_TRANSFORM_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Rect.hpp>
-#include <SFML/System/Vector2.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Rect.hpp>
+#include <sfml/System/Vector2.hpp>
 
 
 namespace sf
@@ -39,7 +39,7 @@ namespace sf
 /// \brief Define a 3x3 transform matrix
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API Transform
+class sfml_GRAPHICS_API Transform
 {
 public :
 
@@ -121,7 +121,7 @@ public :
     ////////////////////////////////////////////////////////////
     /// \brief Transform a rectangle
     ///
-    /// Since SFML doesn't provide support for oriented rectangles,
+    /// Since sfml doesn't provide support for oriented rectangles,
     /// the result of this function is always an axis-aligned
     /// rectangle. Which means that if the transform contains a
     /// rotation, the bounding rectangle of the transformed rectangle
@@ -373,7 +373,7 @@ private:
 /// \return New combined transform
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API Transform operator *(const Transform& left, const Transform& right);
+sfml_GRAPHICS_API Transform operator *(const Transform& left, const Transform& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates sf::Transform
@@ -387,7 +387,7 @@ SFML_GRAPHICS_API Transform operator *(const Transform& left, const Transform& r
 /// \return The combined transform
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API Transform& operator *=(Transform& left, const Transform& right);
+sfml_GRAPHICS_API Transform& operator *=(Transform& left, const Transform& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates sf::Transform
@@ -401,12 +401,12 @@ SFML_GRAPHICS_API Transform& operator *=(Transform& left, const Transform& right
 /// \return New transformed point
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API Vector2f operator *(const Transform& left, const Vector2f& right);
+sfml_GRAPHICS_API Vector2f operator *(const Transform& left, const Vector2f& right);
 
 } // namespace sf
 
 
-#endif // SFML_TRANSFORM_HPP
+#endif // sfml_TRANSFORM_HPP
 
 
 ////////////////////////////////////////////////////////////

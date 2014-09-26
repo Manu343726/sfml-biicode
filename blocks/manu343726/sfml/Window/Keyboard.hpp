@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_KEYBOARD_HPP
-#define SFML_KEYBOARD_HPP
+#ifndef sfml_KEYBOARD_HPP
+#define sfml_KEYBOARD_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Window/Export.hpp>
+#include <sfml/Window/Export.hpp>
 
 
 namespace sf
@@ -37,7 +37,7 @@ namespace sf
 /// \brief Give access to the real-time state of the keyboard
 ///
 ////////////////////////////////////////////////////////////
-class SFML_WINDOW_API Keyboard
+class sfml_WINDOW_API Keyboard
 {
 public :
 
@@ -167,7 +167,7 @@ public :
 } // namespace sf
 
 
-#endif // SFML_KEYBOARD_HPP
+#endif // sfml_KEYBOARD_HPP
 
 
 ////////////////////////////////////////////////////////////

@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_MOUSE_HPP
-#define SFML_MOUSE_HPP
+#ifndef sfml_MOUSE_HPP
+#define sfml_MOUSE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Window/Export.hpp>
-#include <SFML/System/Vector2.hpp>
+#include <sfml/Window/Export.hpp>
+#include <sfml/System/Vector2.hpp>
 
 
 namespace sf
@@ -40,7 +40,7 @@ class Window;
 /// \brief Give access to the real-time state of the mouse
 ///
 ////////////////////////////////////////////////////////////
-class SFML_WINDOW_API Mouse
+class sfml_WINDOW_API Mouse
 {
 public :
 
@@ -120,7 +120,7 @@ public :
 } // namespace sf
 
 
-#endif // SFML_MOUSE_HPP
+#endif // sfml_MOUSE_HPP
 
 
 ////////////////////////////////////////////////////////////

@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_MUTEX_HPP
-#define SFML_MUTEX_HPP
+#ifndef sfml_MUTEX_HPP
+#define sfml_MUTEX_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/System/Export.hpp>
-#include <SFML/System/NonCopyable.hpp>
+#include <sfml/System/Export.hpp>
+#include <sfml/System/NonCopyable.hpp>
 
 
 namespace sf
@@ -44,7 +44,7 @@ namespace priv
 ///        from multiple threads
 ///
 ////////////////////////////////////////////////////////////
-class SFML_SYSTEM_API Mutex : NonCopyable
+class sfml_SYSTEM_API Mutex : NonCopyable
 {
 public :
 
@@ -91,7 +91,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_MUTEX_HPP
+#endif // sfml_MUTEX_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -136,7 +136,7 @@ private :
 /// environments where exceptions can be thrown, you should
 /// use the helper class sf::Lock to lock/unlock mutexes.
 ///
-/// SFML mutexes are recursive, which means that you can lock
+/// sfml mutexes are recursive, which means that you can lock
 /// a mutex multiple times in the same thread without creating
 /// a deadlock. In this case, the first call to lock() behaves
 /// as usual, and the following ones have no effect.

@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_GLRESOURCE_HPP
-#define SFML_GLRESOURCE_HPP
+#ifndef sfml_GLRESOURCE_HPP
+#define sfml_GLRESOURCE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Window/Export.hpp>
+#include <sfml/Window/Export.hpp>
 
 
 namespace sf
@@ -37,7 +37,7 @@ namespace sf
 /// \brief Base class for classes that require an OpenGL context
 ///
 ////////////////////////////////////////////////////////////
-class SFML_WINDOW_API GlResource
+class sfml_WINDOW_API GlResource
 {
 protected :
 
@@ -63,7 +63,7 @@ protected :
 } // namespace sf
 
 
-#endif // SFML_GLRESOURCE_HPP
+#endif // sfml_GLRESOURCE_HPP
 
 ////////////////////////////////////////////////////////////
 /// \class sf::GlResource

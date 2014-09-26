@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,17 +22,17 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_SPRITE_HPP
-#define SFML_SPRITE_HPP
+#ifndef sfml_SPRITE_HPP
+#define sfml_SPRITE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Drawable.hpp>
-#include <SFML/Graphics/Transformable.hpp>
-#include <SFML/Graphics/Vertex.hpp>
-#include <SFML/Graphics/Rect.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Drawable.hpp>
+#include <sfml/Graphics/Transformable.hpp>
+#include <sfml/Graphics/Vertex.hpp>
+#include <sfml/Graphics/Rect.hpp>
 
 
 namespace sf
@@ -44,7 +44,7 @@ class Texture;
 ///        own transformations, color, etc.
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API Sprite : public Drawable, public Transformable
+class sfml_GRAPHICS_API Sprite : public Drawable, public Transformable
 {
 public :
 
@@ -223,7 +223,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_SPRITE_HPP
+#endif // sfml_SPRITE_HPP
 
 
 ////////////////////////////////////////////////////////////

@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,15 +22,15 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_TEXTURE_HPP
-#define SFML_TEXTURE_HPP
+#ifndef sfml_TEXTURE_HPP
+#define sfml_TEXTURE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Image.hpp>
-#include <SFML/Window/GlResource.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Image.hpp>
+#include <sfml/Window/GlResource.hpp>
 
 
 namespace sf
@@ -44,7 +44,7 @@ class InputStream;
 /// \brief Image living on the graphics card that can be used for drawing
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API Texture : GlResource
+class sfml_GRAPHICS_API Texture : GlResource
 {
 public :
 
@@ -424,7 +424,7 @@ public :
     /// \brief Bind a texture for rendering
     ///
     /// This function is not part of the graphics API, it mustn't be
-    /// used when drawing SFML entities. It must be used only if you
+    /// used when drawing sfml entities. It must be used only if you
     /// mix sf::Texture with OpenGL code.
     ///
     /// \code
@@ -443,7 +443,7 @@ public :
     /// must be in range [0 .. 1], which is the default way of handling
     /// texture coordinates with OpenGL. If Pixels, they must be given
     /// in pixels (range [0 .. size]). This mode is used internally by
-    /// the graphics classes of SFML, it makes the definition of texture
+    /// the graphics classes of sfml, it makes the definition of texture
     /// coordinates more intuitive for the high-level API, users don't need
     /// to compute normalized values.
     ///
@@ -500,7 +500,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_TEXTURE_HPP
+#endif // sfml_TEXTURE_HPP
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Texture

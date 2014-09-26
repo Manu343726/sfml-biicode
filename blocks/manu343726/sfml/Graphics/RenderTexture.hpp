@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,15 +22,15 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_RENDERTEXTURE_HPP
-#define SFML_RENDERTEXTURE_HPP
+#ifndef sfml_RENDERTEXTURE_HPP
+#define sfml_RENDERTEXTURE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Texture.hpp>
-#include <SFML/Graphics/RenderTarget.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Texture.hpp>
+#include <sfml/Graphics/RenderTarget.hpp>
 
 
 namespace sf
@@ -44,7 +44,7 @@ namespace priv
 /// \brief Target for off-screen 2D rendering into a texture
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API RenderTexture : public RenderTarget
+class sfml_GRAPHICS_API RenderTexture : public RenderTarget
 {
 public :
 
@@ -211,7 +211,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_RENDERTEXTURE_HPP
+#endif // sfml_RENDERTEXTURE_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -234,7 +234,7 @@ private :
 ///
 /// \code
 /// // Create a new render-window
-/// sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
+/// sf::RenderWindow window(sf::VideoMode(800, 600), "sfml window");
 ///
 /// // Create a new render-texture
 /// sf::RenderTexture texture;
@@ -272,7 +272,7 @@ private :
 ///
 /// Like sf::RenderWindow, sf::RenderTexture is still able to render direct
 /// OpenGL stuff. It is even possible to mix together OpenGL calls
-/// and regular SFML drawing commands. If you need a depth buffer for
+/// and regular sfml drawing commands. If you need a depth buffer for
 /// 3D rendering, don't forget to request it when calling RenderTexture::create.
 ///
 /// \see sf::RenderTarget, sf::RenderWindow, sf::View, sf::Texture

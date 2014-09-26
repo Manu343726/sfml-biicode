@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_SLEEP_HPP
-#define SFML_SLEEP_HPP
+#ifndef sfml_SLEEP_HPP
+#define sfml_SLEEP_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/System/Export.hpp>
-#include <SFML/System/Time.hpp>
+#include <sfml/System/Export.hpp>
+#include <sfml/System/Time.hpp>
 
 
 namespace sf
@@ -44,9 +44,9 @@ namespace sf
 /// \param duration Time to sleep
 ///
 ////////////////////////////////////////////////////////////
-void SFML_SYSTEM_API sleep(Time duration);
+void sfml_SYSTEM_API sleep(Time duration);
 
 } // namespace sf
 
 
-#endif // SFML_SLEEP_HPP
+#endif // sfml_SLEEP_HPP

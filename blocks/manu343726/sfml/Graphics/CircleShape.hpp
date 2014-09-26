@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_CIRCLESHAPE_HPP
-#define SFML_CIRCLESHAPE_HPP
+#ifndef sfml_CIRCLESHAPE_HPP
+#define sfml_CIRCLESHAPE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Shape.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Shape.hpp>
 
 
 namespace sf
@@ -38,7 +38,7 @@ namespace sf
 /// \brief Specialized shape representing a circle
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API CircleShape : public Shape
+class sfml_GRAPHICS_API CircleShape : public Shape
 {
 public :
 
@@ -115,7 +115,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_CIRCLESHAPE_HPP
+#endif // sfml_CIRCLESHAPE_HPP
 
 
 ////////////////////////////////////////////////////////////

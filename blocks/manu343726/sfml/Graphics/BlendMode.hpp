@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,8 +22,8 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_BLENDMODE_HPP
-#define SFML_BLENDMODE_HPP
+#ifndef sfml_BLENDMODE_HPP
+#define sfml_BLENDMODE_HPP
 
 namespace sf
 {
@@ -43,4 +43,4 @@ enum BlendMode
 } // namespace sf
 
 
-#endif // SFML_BLENDMODE_HPP
+#endif // sfml_BLENDMODE_HPP

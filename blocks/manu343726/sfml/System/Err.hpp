@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,28 +22,28 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_ERR_HPP
-#define SFML_ERR_HPP
+#ifndef sfml_ERR_HPP
+#define sfml_ERR_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/System/Export.hpp>
+#include <sfml/System/Export.hpp>
 #include <ostream>
 
 
 namespace sf
 {
 ////////////////////////////////////////////////////////////
-/// \brief Standard stream used by SFML to output warnings and errors
+/// \brief Standard stream used by sfml to output warnings and errors
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API std::ostream& err();
+sfml_SYSTEM_API std::ostream& err();
 
 } // namespace sf
 
 
-#endif // SFML_ERR_HPP
+#endif // sfml_ERR_HPP
 
 
 ////////////////////////////////////////////////////////////

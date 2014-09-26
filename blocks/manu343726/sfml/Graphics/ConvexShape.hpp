@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_CONVEXSHAPE_HPP
-#define SFML_CONVEXSHAPE_HPP
+#ifndef sfml_CONVEXSHAPE_HPP
+#define sfml_CONVEXSHAPE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Shape.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Shape.hpp>
 #include <vector>
 
 
@@ -39,7 +39,7 @@ namespace sf
 /// \brief Specialized shape representing a convex polygon
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API ConvexShape : public Shape
+class sfml_GRAPHICS_API ConvexShape : public Shape
 {
 public :
 
@@ -115,7 +115,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_CONVEXSHAPE_HPP
+#endif // sfml_CONVEXSHAPE_HPP
 
 
 ////////////////////////////////////////////////////////////

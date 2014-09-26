@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,22 +22,22 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_WINDOW_HPP
-#define SFML_WINDOW_HPP
+#ifndef sfml_WINDOW_HPP
+#define sfml_WINDOW_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Window/Export.hpp>
-#include <SFML/Window/ContextSettings.hpp>
-#include <SFML/Window/VideoMode.hpp>
-#include <SFML/Window/WindowHandle.hpp>
-#include <SFML/Window/WindowStyle.hpp>
-#include <SFML/Window/GlResource.hpp>
-#include <SFML/System/Clock.hpp>
-#include <SFML/System/Vector2.hpp>
-#include <SFML/System/NonCopyable.hpp>
-#include <SFML/System/String.hpp>
+#include <sfml/Window/Export.hpp>
+#include <sfml/Window/ContextSettings.hpp>
+#include <sfml/Window/VideoMode.hpp>
+#include <sfml/Window/WindowHandle.hpp>
+#include <sfml/Window/WindowStyle.hpp>
+#include <sfml/Window/GlResource.hpp>
+#include <sfml/System/Clock.hpp>
+#include <sfml/System/Vector2.hpp>
+#include <sfml/System/NonCopyable.hpp>
+#include <sfml/System/String.hpp>
 
 
 namespace sf
@@ -54,7 +54,7 @@ class Event;
 /// \brief Window that serves as a target for OpenGL rendering
 ///
 ////////////////////////////////////////////////////////////
-class SFML_WINDOW_API Window : GlResource, NonCopyable
+class sfml_WINDOW_API Window : GlResource, NonCopyable
 {
 public :
 
@@ -170,7 +170,7 @@ public :
     /// Note that these settings may be different from what was
     /// passed to the constructor or the create() function,
     /// if one or more settings were not supported. In this case,
-    /// SFML chose the closest match.
+    /// sfml chose the closest match.
     ///
     /// \return Structure containing the OpenGL context settings
     ///
@@ -358,7 +358,7 @@ public :
     /// If a limit is set, the window will use a small delay after
     /// each call to display() to ensure that the current frame
     /// lasted long enough to match the framerate limit.
-    /// SFML will try to match the given limit as much as it can,
+    /// sfml will try to match the given limit as much as it can,
     /// but since it internally uses sf::sleep, whose precision
     /// depends on the underlying OS, the results may be a little
     /// unprecise as well (for example, you can get 65 FPS when
@@ -415,7 +415,7 @@ public :
     /// The type of the returned handle is sf::WindowHandle,
     /// which is a typedef to the handle type defined by the OS.
     /// You shouldn't need to use this function, unless you have
-    /// very specific stuff to implement that SFML doesn't support,
+    /// very specific stuff to implement that sfml doesn't support,
     /// or implement a temporary workaround until a bug is fixed.
     ///
     /// \return System handle of the window
@@ -479,7 +479,7 @@ private:
 } // namespace sf
 
 
-#endif // SFML_WINDOW_HPP
+#endif // sfml_WINDOW_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -511,7 +511,7 @@ private:
 /// Usage example:
 /// \code
 /// // Declare and create a new window
-/// sf::Window window(sf::VideoMode(800, 600), "SFML window");
+/// sf::Window window(sf::VideoMode(800, 600), "sfml window");
 ///
 /// // Limit the framerate to 60 frames per second (this step is optional)
 /// window.setFramerateLimit(60);

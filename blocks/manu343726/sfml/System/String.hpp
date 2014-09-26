@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_STRING_HPP
-#define SFML_STRING_HPP
+#ifndef sfml_STRING_HPP
+#define sfml_STRING_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/System/Export.hpp>
+#include <sfml/System/Export.hpp>
 #include <locale>
 #include <string>
 
@@ -40,7 +40,7 @@ namespace sf
 ///        conversions between types and encodings
 ///
 ////////////////////////////////////////////////////////////
-class SFML_SYSTEM_API String
+class sfml_SYSTEM_API String
 {
 public :
 
@@ -394,8 +394,8 @@ public :
 
 private :
 
-    friend SFML_SYSTEM_API bool operator ==(const String& left, const String& right);
-    friend SFML_SYSTEM_API bool operator <(const String& left, const String& right);
+    friend sfml_SYSTEM_API bool operator ==(const String& left, const String& right);
+    friend sfml_SYSTEM_API bool operator <(const String& left, const String& right);
 
     ////////////////////////////////////////////////////////////
     // Member data
@@ -413,7 +413,7 @@ private :
 /// \return True if both strings are equal
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator ==(const String& left, const String& right);
+sfml_SYSTEM_API bool operator ==(const String& left, const String& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -425,7 +425,7 @@ SFML_SYSTEM_API bool operator ==(const String& left, const String& right);
 /// \return True if both strings are different
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator !=(const String& left, const String& right);
+sfml_SYSTEM_API bool operator !=(const String& left, const String& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -437,7 +437,7 @@ SFML_SYSTEM_API bool operator !=(const String& left, const String& right);
 /// \return True if \a left is alphabetically lesser than \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator <(const String& left, const String& right);
+sfml_SYSTEM_API bool operator <(const String& left, const String& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -449,7 +449,7 @@ SFML_SYSTEM_API bool operator <(const String& left, const String& right);
 /// \return True if \a left is alphabetically greater than \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator >(const String& left, const String& right);
+sfml_SYSTEM_API bool operator >(const String& left, const String& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -461,7 +461,7 @@ SFML_SYSTEM_API bool operator >(const String& left, const String& right);
 /// \return True if \a left is alphabetically lesser or equal than \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator <=(const String& left, const String& right);
+sfml_SYSTEM_API bool operator <=(const String& left, const String& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -473,7 +473,7 @@ SFML_SYSTEM_API bool operator <=(const String& left, const String& right);
 /// \return True if \a left is alphabetically greater or equal than \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator >=(const String& left, const String& right);
+sfml_SYSTEM_API bool operator >=(const String& left, const String& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -485,12 +485,12 @@ SFML_SYSTEM_API bool operator >=(const String& left, const String& right);
 /// \return Concatenated string
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API String operator +(const String& left, const String& right);
+sfml_SYSTEM_API String operator +(const String& left, const String& right);
 
 } // namespace sf
 
 
-#endif // SFML_STRING_HPP
+#endif // sfml_STRING_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -534,10 +534,10 @@ SFML_SYSTEM_API String operator +(const String& left, const String& right);
 /// provided for convenience, and you may have to consider using
 /// a more optimized class if your program requires complex string
 /// handling. The automatic conversion functions will then take
-/// care of converting your string to sf::String whenever SFML
+/// care of converting your string to sf::String whenever sfml
 /// requires it.
 ///
-/// Please note that SFML also defines a low-level, generic
+/// Please note that sfml also defines a low-level, generic
 /// interface for Unicode handling, see the sf::Utf classes.
 ///
 ////////////////////////////////////////////////////////////

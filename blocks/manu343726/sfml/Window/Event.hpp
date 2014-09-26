@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,16 +22,16 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_EVENT_HPP
-#define SFML_EVENT_HPP
+#ifndef sfml_EVENT_HPP
+#define sfml_EVENT_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Config.hpp>
-#include <SFML/Window/Joystick.hpp>
-#include <SFML/Window/Keyboard.hpp>
-#include <SFML/Window/Mouse.hpp>
+#include <sfml/Config.hpp>
+#include <sfml/Window/Joystick.hpp>
+#include <sfml/Window/Keyboard.hpp>
+#include <sfml/Window/Mouse.hpp>
 
 
 namespace sf
@@ -191,7 +191,7 @@ public :
 } // namespace sf
 
 
-#endif // SFML_EVENT_HPP
+#endif // sfml_EVENT_HPP
 
 
 ////////////////////////////////////////////////////////////

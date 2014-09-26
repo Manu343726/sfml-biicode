@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_TRANSFORMABLE_HPP
-#define SFML_TRANSFORMABLE_HPP
+#ifndef sfml_TRANSFORMABLE_HPP
+#define sfml_TRANSFORMABLE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Transform.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Transform.hpp>
 
 
 namespace sf
@@ -38,7 +38,7 @@ namespace sf
 /// \brief Decomposed transform defined by a position, a rotation and a scale
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API Transformable
+class sfml_GRAPHICS_API Transformable
 {
 public :
 
@@ -329,7 +329,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_TRANSFORMABLE_HPP
+#endif // sfml_TRANSFORMABLE_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -372,7 +372,7 @@ private :
 /// center, for example. To do such things, use sf::Transform directly.
 ///
 /// sf::Transformable can be used as a base class. It is often
-/// combined with sf::Drawable -- that's what SFML's sprites,
+/// combined with sf::Drawable -- that's what sfml's sprites,
 /// texts and shapes do.
 /// \code
 /// class MyEntity : public sf::Transformable, public sf::Drawable

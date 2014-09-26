@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_RECTANGLESHAPE_HPP
-#define SFML_RECTANGLESHAPE_HPP
+#ifndef sfml_RECTANGLESHAPE_HPP
+#define sfml_RECTANGLESHAPE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Shape.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Shape.hpp>
 
 
 namespace sf
@@ -38,7 +38,7 @@ namespace sf
 /// \brief Specialized shape representing a rectangle
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API RectangleShape : public Shape
+class sfml_GRAPHICS_API RectangleShape : public Shape
 {
 public :
 
@@ -101,7 +101,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_RECTANGLESHAPE_HPP
+#endif // sfml_RECTANGLESHAPE_HPP
 
 
 ////////////////////////////////////////////////////////////

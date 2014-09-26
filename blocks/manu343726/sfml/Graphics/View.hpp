@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,16 +22,16 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_VIEW_HPP
-#define SFML_VIEW_HPP
+#ifndef sfml_VIEW_HPP
+#define sfml_VIEW_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Rect.hpp>
-#include <SFML/Graphics/Transform.hpp>
-#include <SFML/System/Vector2.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Rect.hpp>
+#include <sfml/Graphics/Transform.hpp>
+#include <sfml/System/Vector2.hpp>
 
 
 namespace sf
@@ -40,7 +40,7 @@ namespace sf
 /// \brief 2D camera that defines what region is shown on screen
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API View
+class sfml_GRAPHICS_API View
 {
 public :
 
@@ -282,7 +282,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_VIEW_HPP
+#endif // sfml_VIEW_HPP
 
 
 ////////////////////////////////////////////////////////////

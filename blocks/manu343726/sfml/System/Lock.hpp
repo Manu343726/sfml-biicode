@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_LOCK_HPP
-#define SFML_LOCK_HPP
+#ifndef sfml_LOCK_HPP
+#define sfml_LOCK_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/System/Export.hpp>
-#include <SFML/System/NonCopyable.hpp>
+#include <sfml/System/Export.hpp>
+#include <sfml/System/NonCopyable.hpp>
 
 
 namespace sf
@@ -40,7 +40,7 @@ class Mutex;
 /// \brief Automatic wrapper for locking and unlocking mutexes
 ///
 ////////////////////////////////////////////////////////////
-class SFML_SYSTEM_API Lock : NonCopyable
+class sfml_SYSTEM_API Lock : NonCopyable
 {
 public :
 
@@ -73,7 +73,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_LOCK_HPP
+#endif // sfml_LOCK_HPP
 
 
 ////////////////////////////////////////////////////////////

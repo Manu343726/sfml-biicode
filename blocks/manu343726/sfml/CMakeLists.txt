@@ -77,14 +77,29 @@ elseif (LINUX)
     SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/nix32)
 endif ()
 
-message(STATUS "manu343726/SFML current source dir: ${CMAKE_CURRENT_SOURCE_DIR}")
-message(STATUS "manu343726/SFML binaries path ${SFML_LIBS_PATH}")
+message(STATUS "manu343726/SFML binaries path: ${SFML_LIBS_PATH}")
 
 #32 bit target please
 #target_compile_options(${BII_LIB_TARGET} PUBLIC "-m32" "-D__int128=unsigned long long")
 
 FIND_LIBRARY(sfml-system-lib
 	         NAMES sfml-system system
+             PATHS ${SFML_LIBS_PATH} NO_DEFAULT_PATH)
+
+FIND_LIBRARY(sfml-window-lib
+             NAMES sfml-window window
+             PATHS ${SFML_LIBS_PATH} NO_DEFAULT_PATH)
+
+FIND_LIBRARY(sfml-graphics-lib
+             NAMES sfml-graphics graphics
+             PATHS ${SFML_LIBS_PATH} NO_DEFAULT_PATH)
+
+FIND_LIBRARY(sfml-audio-lib
+             NAMES sfml-audio audio
+             PATHS ${SFML_LIBS_PATH} NO_DEFAULT_PATH)
+
+FIND_LIBRARY(sfml-network-lib
+             NAMES sfml-network network
              PATHS ${SFML_LIBS_PATH} NO_DEFAULT_PATH)
 
 

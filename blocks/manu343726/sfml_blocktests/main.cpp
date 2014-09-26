@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "manu343726/SFML/Window.hpp"
+#include "manu343726/sfml/Window.hpp"
 
 int main()
 {

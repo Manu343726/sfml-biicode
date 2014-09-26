@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,26 +22,26 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_SFML_WINDOW_HPP
-#define SFML_SFML_WINDOW_HPP
+#ifndef sfml_sfml_WINDOW_HPP
+#define sfml_sfml_WINDOW_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
 
-#include <SFML/System.hpp>
-#include <SFML/Window/Context.hpp>
-#include <SFML/Window/ContextSettings.hpp>
-#include <SFML/Window/Event.hpp>
-#include <SFML/Window/Joystick.hpp>
-#include <SFML/Window/Keyboard.hpp>
-#include <SFML/Window/Mouse.hpp>
-#include <SFML/Window/VideoMode.hpp>
-#include <SFML/Window/Window.hpp>
-#include <SFML/Window/WindowStyle.hpp>
+#include <sfml/System.hpp>
+#include <sfml/Window/Context.hpp>
+#include <sfml/Window/ContextSettings.hpp>
+#include <sfml/Window/Event.hpp>
+#include <sfml/Window/Joystick.hpp>
+#include <sfml/Window/Keyboard.hpp>
+#include <sfml/Window/Mouse.hpp>
+#include <sfml/Window/VideoMode.hpp>
+#include <sfml/Window/Window.hpp>
+#include <sfml/Window/WindowStyle.hpp>
 
 
-#endif // SFML_SFML_WINDOW_HPP
+#endif // sfml_sfml_WINDOW_HPP
 
 ////////////////////////////////////////////////////////////
 /// \defgroup window Window module

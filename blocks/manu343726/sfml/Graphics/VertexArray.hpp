@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,17 +22,17 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_VERTEXARRAY_HPP
-#define SFML_VERTEXARRAY_HPP
+#ifndef sfml_VERTEXARRAY_HPP
+#define sfml_VERTEXARRAY_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Vertex.hpp>
-#include <SFML/Graphics/PrimitiveType.hpp>
-#include <SFML/Graphics/Rect.hpp>
-#include <SFML/Graphics/Drawable.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Vertex.hpp>
+#include <sfml/Graphics/PrimitiveType.hpp>
+#include <sfml/Graphics/Rect.hpp>
+#include <sfml/Graphics/Drawable.hpp>
 #include <vector>
 
 
@@ -42,7 +42,7 @@ namespace sf
 /// \brief Define a set of one or more 2D primitives
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API VertexArray : public Drawable
+class sfml_GRAPHICS_API VertexArray : public Drawable
 {
 public :
 
@@ -194,7 +194,7 @@ private:
 } // namespace sf
 
 
-#endif // SFML_VERTEXARRAY_HPP
+#endif // sfml_VERTEXARRAY_HPP
 
 
 ////////////////////////////////////////////////////////////

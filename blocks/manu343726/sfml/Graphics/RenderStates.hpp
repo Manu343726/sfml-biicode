@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,15 +22,15 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_RENDERSTATES_HPP
-#define SFML_RENDERSTATES_HPP
+#ifndef sfml_RENDERSTATES_HPP
+#define sfml_RENDERSTATES_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/BlendMode.hpp>
-#include <SFML/Graphics/Transform.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/BlendMode.hpp>
+#include <sfml/Graphics/Transform.hpp>
 
 
 namespace sf
@@ -42,7 +42,7 @@ class Texture;
 /// \brief Define the states used for drawing to a RenderTarget
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API RenderStates
+class sfml_GRAPHICS_API RenderStates
 {
 public :
 
@@ -121,7 +121,7 @@ public :
 } // namespace sf
 
 
-#endif // SFML_RENDERSTATES_HPP
+#endif // sfml_RENDERSTATES_HPP
 
 
 ////////////////////////////////////////////////////////////

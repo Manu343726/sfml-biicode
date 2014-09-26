@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,37 +22,37 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_GRAPHICS_HPP
-#define SFML_GRAPHICS_HPP
+#ifndef sfml_GRAPHICS_HPP
+#define sfml_GRAPHICS_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
 
-#include <SFML/Window.hpp>
-#include <SFML/Graphics/BlendMode.hpp>
-#include <SFML/Graphics/Color.hpp>
-#include <SFML/Graphics/Font.hpp>
-#include <SFML/Graphics/Glyph.hpp>
-#include <SFML/Graphics/Image.hpp>
-#include <SFML/Graphics/RenderStates.hpp>
-#include <SFML/Graphics/RenderTexture.hpp>
-#include <SFML/Graphics/RenderWindow.hpp>
-#include <SFML/Graphics/Shader.hpp>
-#include <SFML/Graphics/Shape.hpp>
-#include <SFML/Graphics/CircleShape.hpp>
-#include <SFML/Graphics/RectangleShape.hpp>
-#include <SFML/Graphics/ConvexShape.hpp>
-#include <SFML/Graphics/Sprite.hpp>
-#include <SFML/Graphics/Text.hpp>
-#include <SFML/Graphics/Texture.hpp>
-#include <SFML/Graphics/Transform.hpp>
-#include <SFML/Graphics/Vertex.hpp>
-#include <SFML/Graphics/VertexArray.hpp>
-#include <SFML/Graphics/View.hpp>
+#include <sfml/Window.hpp>
+#include <sfml/Graphics/BlendMode.hpp>
+#include <sfml/Graphics/Color.hpp>
+#include <sfml/Graphics/Font.hpp>
+#include <sfml/Graphics/Glyph.hpp>
+#include <sfml/Graphics/Image.hpp>
+#include <sfml/Graphics/RenderStates.hpp>
+#include <sfml/Graphics/RenderTexture.hpp>
+#include <sfml/Graphics/RenderWindow.hpp>
+#include <sfml/Graphics/Shader.hpp>
+#include <sfml/Graphics/Shape.hpp>
+#include <sfml/Graphics/CircleShape.hpp>
+#include <sfml/Graphics/RectangleShape.hpp>
+#include <sfml/Graphics/ConvexShape.hpp>
+#include <sfml/Graphics/Sprite.hpp>
+#include <sfml/Graphics/Text.hpp>
+#include <sfml/Graphics/Texture.hpp>
+#include <sfml/Graphics/Transform.hpp>
+#include <sfml/Graphics/Vertex.hpp>
+#include <sfml/Graphics/VertexArray.hpp>
+#include <sfml/Graphics/View.hpp>
 
 
-#endif // SFML_GRAPHICS_HPP
+#endif // sfml_GRAPHICS_HPP
 
 ////////////////////////////////////////////////////////////
 /// \defgroup graphics Graphics module

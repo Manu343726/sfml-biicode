@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,15 +22,15 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_IMAGE_HPP
-#define SFML_IMAGE_HPP
+#ifndef sfml_IMAGE_HPP
+#define sfml_IMAGE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Color.hpp>
-#include <SFML/Graphics/Rect.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Color.hpp>
+#include <sfml/Graphics/Rect.hpp>
 #include <string>
 #include <vector>
 
@@ -43,7 +43,7 @@ class InputStream;
 /// \brief Class for loading, manipulating and saving images
 ///
 ////////////////////////////////////////////////////////////
-class SFML_GRAPHICS_API Image
+class sfml_GRAPHICS_API Image
 {
 public :
 
@@ -264,7 +264,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_IMAGE_HPP
+#endif // sfml_IMAGE_HPP
 
 
 ////////////////////////////////////////////////////////////

@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,16 +22,16 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_CONTEXT_HPP
-#define SFML_CONTEXT_HPP
+#ifndef sfml_CONTEXT_HPP
+#define sfml_CONTEXT_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Window/Export.hpp>
-#include <SFML/Window/GlResource.hpp>
-#include <SFML/Window/ContextSettings.hpp>
-#include <SFML/System/NonCopyable.hpp>
+#include <sfml/Window/Export.hpp>
+#include <sfml/Window/GlResource.hpp>
+#include <sfml/Window/ContextSettings.hpp>
+#include <sfml/System/NonCopyable.hpp>
 
 
 namespace sf
@@ -45,7 +45,7 @@ namespace priv
 /// \brief Class holding a valid drawing context
 ///
 ////////////////////////////////////////////////////////////
-class SFML_WINDOW_API Context : GlResource, NonCopyable
+class sfml_WINDOW_API Context : GlResource, NonCopyable
 {
 public :
 
@@ -101,7 +101,7 @@ private :
 } // namespace sf
 
 
-#endif // SFML_CONTEXT_HPP
+#endif // sfml_CONTEXT_HPP
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Context

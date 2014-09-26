@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 //
-// SFML - Simple and Fast Multimedia Library
+// sfml - Simple and Fast Multimedia Library
 // Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef SFML_THREADLOCALPTR_HPP
-#define SFML_THREADLOCALPTR_HPP
+#ifndef sfml_THREADLOCALPTR_HPP
+#define sfml_THREADLOCALPTR_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/System/ThreadLocal.hpp>
+#include <sfml/System/ThreadLocal.hpp>
 
 
 namespace sf
@@ -104,10 +104,10 @@ public :
 
 } // namespace sf
 
-#include <SFML/System/ThreadLocalPtr.inl>
+#include <sfml/System/ThreadLocalPtr.inl>
 
 
-#endif // SFML_THREADLOCALPTR_HPP
+#endif // sfml_THREADLOCALPTR_HPP
 
 
 ////////////////////////////////////////////////////////////
