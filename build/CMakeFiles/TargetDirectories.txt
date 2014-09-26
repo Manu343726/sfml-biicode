@@ -1,2 +1,0 @@
-C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/manu343726/sfml/CMakeFiles/manu343726_sfml.dir
-C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/manu343726/sfml_blocktests/CMakeFiles/manu343726_sfml_blocktests_main.dir

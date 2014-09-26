@@ -1,6 +1,6 @@
-The system is: Windows - 6.2 - AMD64
+The system is: Linux - 3.12.28-1-MANJARO - i686
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/MinGW/bin/gcc.exe 
+Compiler: /usr/bin/cc 
 Build flags: 
 Id flags: 
 
@@ -8,12 +8,12 @@ The output was:
 0
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/3.0.2/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/3.0.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/MinGW/bin/g++.exe 
+Compiler: /usr/bin/c++ 
 Build flags: 
 Id flags: 
 
@@ -21,268 +21,231 @@ The output was:
 0
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/3.0.2/CompilerIdCXX/a.exe"
+The CXX compiler identification is GNU, found in "/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/3.0.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1757136500/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1757136500.dir\build.make CMakeFiles/cmTryCompileExec1757136500.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp'
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\Manuel\Documents\GitHub\sfml-biicode\build\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1757136500.dir/testCCompiler.c.obj
-C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec1757136500.dir\testCCompiler.c.obj   -c C:\Users\Manuel\Documents\GitHub\sfml-biicode\build\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTryCompileExec1757136500.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1757136500.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1757136500.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1757136500.dir/objects.a @CMakeFiles\cmTryCompileExec1757136500.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTryCompileExec1757136500.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1757136500.exe -Wl,--out-implib,libcmTryCompileExec1757136500.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4213892768/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4213892768.dir/build.make CMakeFiles/cmTryCompileExec4213892768.dir/build
+make[1]: Entering directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4213892768.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4213892768.dir/testCCompiler.c.o   -c /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec4213892768
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4213892768.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4213892768.dir/testCCompiler.c.o  -o cmTryCompileExec4213892768 -rdynamic 
+make[1]: Leaving directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1169771323/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1169771323.dir\build.make CMakeFiles/cmTryCompileExec1169771323.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp'
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\Manuel\Documents\GitHub\sfml-biicode\build\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1169771323.dir/CMakeCCompilerABI.c.obj
-C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec1169771323.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTryCompileExec1169771323.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1169771323.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1169771323.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1169771323.dir/objects.a @CMakeFiles\cmTryCompileExec1169771323.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec1169771323.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1169771323.exe -Wl,--out-implib,libcmTryCompileExec1169771323.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
-Using built-in specs.
-COLLECT_GCC=C:\MinGW\bin\gcc.exe
-COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/lto-wrapper.exe
-Target: x86_64-w64-mingw32
-Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/c/temp/gcc/dest --with-sysroot=/c/temp/gcc/dest --disable-libstdcxx-pch --disable-lto --disable-nls --disable-shared --disable-win32-registry --enable-checking=release --with-tune=haswell
-Thread model: win32
-gcc version 4.9.1 (GCC) 
-COMPILER_PATH=c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/bin/
-LIBRARY_PATH=c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1169771323.exe' '-mtune=haswell' '-march=x86-64'
- c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/collect2.exe --sysroot=c:/temp/gcc/dest -m i386pep -Bdynamic -o cmTryCompileExec1169771323.exe c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec1169771323.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec1169771323.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2820497872/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2820497872.dir/build.make CMakeFiles/cmTryCompileExec2820497872.dir/build
+make[1]: Entering directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2820497872.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2820497872.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.0/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2820497872
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2820497872.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2820497872.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2820497872 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper
+Target: i686-pc-linux-gnu
+Configured with: /build/gcc/src/gcc-4.9.1/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-multilib --disable-werror --enable-checking=release
+Thread model: posix
+gcc version 4.9.1 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2820497872' '-rdynamic' '-mtune=generic' '-march=pentiumpro'
+ /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/collect2 -plugin /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMrGWDq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec2820497872 /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crt1.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crti.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtbegin.o -L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1 -L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../.. CMakeFiles/cmTryCompileExec2820497872.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtend.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crtn.o
+make[1]: Leaving directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1169771323/fast"]
-  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1169771323.dir\build.make CMakeFiles/cmTryCompileExec1169771323.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp']
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\Manuel\Documents\GitHub\sfml-biicode\build\CMakeFiles\CMakeTmp\CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec1169771323.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec1169771323.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTryCompileExec1169771323.exe]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1169771323.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1169771323.dir/objects.a]
-  ignore line: [C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1169771323.dir/objects.a @CMakeFiles\cmTryCompileExec1169771323.dir\objects1.rsp]
-  ignore line: [C:\MinGW\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec1169771323.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1169771323.exe -Wl,--out-implib,libcmTryCompileExec1169771323.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec2820497872/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2820497872.dir/build.make CMakeFiles/cmTryCompileExec2820497872.dir/build]
+  ignore line: [make[1]: Entering directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2820497872.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2820497872.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.0/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2820497872]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2820497872.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2820497872.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2820497872 -rdynamic  ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\MinGW\bin\gcc.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/lto-wrapper.exe]
-  ignore line: [Target: x86_64-w64-mingw32]
-  ignore line: [Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/c/temp/gcc/dest --with-sysroot=/c/temp/gcc/dest --disable-libstdcxx-pch --disable-lto --disable-nls --disable-shared --disable-win32-registry --enable-checking=release --with-tune=haswell]
-  ignore line: [Thread model: win32]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper]
+  ignore line: [Target: i686-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc-4.9.1/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Thread model: posix]
   ignore line: [gcc version 4.9.1 (GCC) ]
-  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/]
-  ignore line: [c:/mingw/bin/../libexec/gcc/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/]
-  ignore line: [c:/mingw/bin/../lib/gcc/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1169771323.exe' '-mtune=haswell' '-march=x86-64']
-  link line: [ c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/collect2.exe --sysroot=c:/temp/gcc/dest -m i386pep -Bdynamic -o cmTryCompileExec1169771323.exe c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec1169771323.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec1169771323.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
-    arg [c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/collect2.exe] ==> ignore
-    arg [--sysroot=c:/temp/gcc/dest] ==> ignore
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2820497872' '-rdynamic' '-mtune=generic' '-march=pentiumpro']
+  link line: [ /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/collect2 -plugin /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMrGWDq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec2820497872 /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crt1.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crti.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtbegin.o -L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1 -L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../.. CMakeFiles/cmTryCompileExec2820497872.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtend.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crtn.o]
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccMrGWDq.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
-    arg [i386pep] ==> ignore
-    arg [-Bdynamic] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec1169771323.exe] ==> ignore
-    arg [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
-    arg [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1]
-    arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib]
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib]
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib]
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../..] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../..]
-    arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTryCompileExec1169771323.dir/objects.a] ==> ignore
-    arg [--no-whole-archive] ==> ignore
-    arg [--out-implib] ==> ignore
-    arg [libcmTryCompileExec1169771323.dll.a] ==> ignore
-    arg [--major-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [--minor-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [-lmingw32] ==> lib [mingw32]
+    arg [cmTryCompileExec2820497872] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crt1.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crti.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1] ==> dir [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1]
+    arg [-L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../..] ==> dir [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../..]
+    arg [CMakeFiles/cmTryCompileExec2820497872.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [-ladvapi32] ==> lib [advapi32]
-    arg [-lshell32] ==> lib [shell32]
-    arg [-luser32] ==> lib [user32]
-    arg [-lkernel32] ==> lib [kernel32]
-    arg [-lmingw32] ==> lib [mingw32]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crtn.o] ==> ignore
   remove lib [gcc]
+  remove lib [gcc_s]
   remove lib [gcc]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1] ==> [c:/MinGW/lib/gcc/x86_64-w64-mingw32/4.9.1]
-  collapse library dir [c:/mingw/bin/../lib/gcc] ==> [c:/MinGW/lib/gcc]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib] ==> [c:/MinGW/x86_64-w64-mingw32/lib]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib] ==> [c:/MinGW/lib]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib] ==> [c:/MinGW/x86_64-w64-mingw32/lib]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../..] ==> [c:/MinGW/lib]
-  implicit libs: [mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
-  implicit dirs: [c:/MinGW/lib/gcc/x86_64-w64-mingw32/4.9.1;c:/MinGW/lib/gcc;c:/MinGW/x86_64-w64-mingw32/lib;c:/MinGW/lib]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1] ==> [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1]
+  collapse library dir [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1;/usr/lib]
   implicit fwks: []
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec4010397649/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec4010397649.dir\build.make CMakeFiles/cmTryCompileExec4010397649.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp'
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\Manuel\Documents\GitHub\sfml-biicode\build\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec4010397649.dir/testCXXCompiler.cxx.obj
-C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTryCompileExec4010397649.dir\testCXXCompiler.cxx.obj -c C:\Users\Manuel\Documents\GitHub\sfml-biicode\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec4010397649.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec4010397649.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec4010397649.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec4010397649.dir/objects.a @CMakeFiles\cmTryCompileExec4010397649.dir\objects1.rsp
-C:\MinGW\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTryCompileExec4010397649.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec4010397649.exe -Wl,--out-implib,libcmTryCompileExec4010397649.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2083158673/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2083158673.dir/build.make CMakeFiles/cmTryCompileExec2083158673.dir/build
+make[1]: Entering directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2083158673.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2083158673.dir/testCXXCompiler.cxx.o -c /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2083158673
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2083158673.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2083158673.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2083158673 -rdynamic 
+make[1]: Leaving directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp
+Change Dir: /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec3849586252/fast"
-C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3849586252.dir\build.make CMakeFiles/cmTryCompileExec3849586252.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp'
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\Manuel\Documents\GitHub\sfml-biicode\build\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3849586252.dir/CMakeCXXCompilerABI.cpp.obj
-C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTryCompileExec3849586252.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp"
-Linking CXX executable cmTryCompileExec3849586252.exe
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec3849586252.dir\link.txt --verbose=1
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec3849586252.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec3849586252.dir/objects.a @CMakeFiles\cmTryCompileExec3849586252.dir\objects1.rsp
-C:\MinGW\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec3849586252.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec3849586252.exe -Wl,--out-implib,libcmTryCompileExec3849586252.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
-Using built-in specs.
-COLLECT_GCC=C:\MinGW\bin\g++.exe
-COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/lto-wrapper.exe
-Target: x86_64-w64-mingw32
-Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/c/temp/gcc/dest --with-sysroot=/c/temp/gcc/dest --disable-libstdcxx-pch --disable-lto --disable-nls --disable-shared --disable-win32-registry --enable-checking=release --with-tune=haswell
-Thread model: win32
-gcc version 4.9.1 (GCC) 
-COMPILER_PATH=c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/bin/
-LIBRARY_PATH=c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/;c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3849586252.exe' '-mtune=haswell' '-march=x86-64'
- c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/collect2.exe --sysroot=c:/temp/gcc/dest -m i386pep -Bdynamic -o cmTryCompileExec3849586252.exe c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec3849586252.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec3849586252.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
-mingw32-make.exe[1]: Leaving directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec605953184/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec605953184.dir/build.make CMakeFiles/cmTryCompileExec605953184.dir/build
+make[1]: Entering directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec605953184.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec605953184.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec605953184
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec605953184.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec605953184.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec605953184 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper
+Target: i686-pc-linux-gnu
+Configured with: /build/gcc/src/gcc-4.9.1/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-multilib --disable-werror --enable-checking=release
+Thread model: posix
+gcc version 4.9.1 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec605953184' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro'
+ /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/collect2 -plugin /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgsKnwy.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec605953184 /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crt1.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crti.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtbegin.o -L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1 -L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../.. CMakeFiles/cmTryCompileExec605953184.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtend.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crtn.o
+make[1]: Leaving directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec3849586252/fast"]
-  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3849586252.dir\build.make CMakeFiles/cmTryCompileExec3849586252.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/CMakeFiles/CMakeTmp']
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report C:\Users\Manuel\Documents\GitHub\sfml-biicode\build\CMakeFiles\CMakeTmp\CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3849586252.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTryCompileExec3849586252.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp"]
-  ignore line: [Linking CXX executable cmTryCompileExec3849586252.exe]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec3849586252.dir\link.txt --verbose=1]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec3849586252.dir/objects.a]
-  ignore line: [C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec3849586252.dir/objects.a @CMakeFiles\cmTryCompileExec3849586252.dir\objects1.rsp]
-  ignore line: [C:\MinGW\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec3849586252.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec3849586252.exe -Wl,--out-implib,libcmTryCompileExec3849586252.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec605953184/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec605953184.dir/build.make CMakeFiles/cmTryCompileExec605953184.dir/build]
+  ignore line: [make[1]: Entering directory '/home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/manu343726/Documentos/sfml-biicode/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec605953184.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec605953184.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec605953184]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec605953184.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec605953184.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec605953184 -rdynamic  ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\MinGW\bin\g++.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/lto-wrapper.exe]
-  ignore line: [Target: x86_64-w64-mingw32]
-  ignore line: [Configured with: ../src/configure --enable-languages=c,c++ --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --disable-multilib --prefix=/c/temp/gcc/dest --with-sysroot=/c/temp/gcc/dest --disable-libstdcxx-pch --disable-lto --disable-nls --disable-shared --disable-win32-registry --enable-checking=release --with-tune=haswell]
-  ignore line: [Thread model: win32]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper]
+  ignore line: [Target: i686-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc-4.9.1/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Thread model: posix]
   ignore line: [gcc version 4.9.1 (GCC) ]
-  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/]
-  ignore line: [c:/mingw/bin/../libexec/gcc/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/bin/]
-  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/]
-  ignore line: [c:/mingw/bin/../lib/gcc/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/]
-  ignore line: [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3849586252.exe' '-mtune=haswell' '-march=x86-64']
-  link line: [ c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/collect2.exe --sysroot=c:/temp/gcc/dest -m i386pep -Bdynamic -o cmTryCompileExec3849586252.exe c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib -Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec3849586252.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec3849586252.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
-    arg [c:/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/4.9.1/collect2.exe] ==> ignore
-    arg [--sysroot=c:/temp/gcc/dest] ==> ignore
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/:/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec605953184' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro']
+  link line: [ /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/collect2 -plugin /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccgsKnwy.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_i386 -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTryCompileExec605953184 /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crt1.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crti.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtbegin.o -L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1 -L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../.. CMakeFiles/cmTryCompileExec605953184.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtend.o /usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crtn.o]
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccgsKnwy.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
-    arg [i386pep] ==> ignore
-    arg [-Bdynamic] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec3849586252.exe] ==> ignore
-    arg [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
-    arg [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1]
-    arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib]
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib]
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib]
-    arg [-Lc:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../..] ==> dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../..]
-    arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTryCompileExec3849586252.dir/objects.a] ==> ignore
-    arg [--no-whole-archive] ==> ignore
-    arg [--out-implib] ==> ignore
-    arg [libcmTryCompileExec3849586252.dll.a] ==> ignore
-    arg [--major-image-version] ==> ignore
-    arg [0] ==> ignore
-    arg [--minor-image-version] ==> ignore
-    arg [0] ==> ignore
+    arg [cmTryCompileExec605953184] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crt1.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crti.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1] ==> dir [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1]
+    arg [-L/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../..] ==> dir [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../..]
+    arg [CMakeFiles/cmTryCompileExec605953184.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
-    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [-ladvapi32] ==> lib [advapi32]
-    arg [-lshell32] ==> lib [shell32]
-    arg [-luser32] ==> lib [user32]
-    arg [-lkernel32] ==> lib [kernel32]
-    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lmoldname] ==> lib [moldname]
-    arg [-lmingwex] ==> lib [mingwex]
-    arg [-lmsvcrt] ==> lib [msvcrt]
-    arg [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../../crtn.o] ==> ignore
+  remove lib [gcc_s]
   remove lib [gcc]
+  remove lib [gcc_s]
   remove lib [gcc]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1] ==> [c:/MinGW/lib/gcc/x86_64-w64-mingw32/4.9.1]
-  collapse library dir [c:/mingw/bin/../lib/gcc] ==> [c:/MinGW/lib/gcc]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib/../lib] ==> [c:/MinGW/x86_64-w64-mingw32/lib]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../lib] ==> [c:/MinGW/lib]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../../../x86_64-w64-mingw32/lib] ==> [c:/MinGW/x86_64-w64-mingw32/lib]
-  collapse library dir [c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/4.9.1/../../..] ==> [c:/MinGW/lib]
-  implicit libs: [stdc++;mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
-  implicit dirs: [c:/MinGW/lib/gcc/x86_64-w64-mingw32/4.9.1;c:/MinGW/lib/gcc;c:/MinGW/x86_64-w64-mingw32/lib;c:/MinGW/lib]
+  collapse library dir [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1] ==> [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1]
+  collapse library dir [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/i686-pc-linux-gnu/4.9.1;/usr/lib]
   implicit fwks: []
 
 

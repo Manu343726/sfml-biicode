@@ -68,16 +68,16 @@ target_include_directories(${BII_BLOCK_TARGETS} PUBLIC ${SFML_INCLUDE_PATH})
 
 
 if(WIN32)
-	SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+	SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/nix32/)
 elseif(LINUX)
-	SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib)
+	SET(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/nix32/)
 endif()
 
 #32 bit target please
-target_compile_options(${BII_LIB_TARGET} PUBLIC "-m32" "-D__int128=unsigned long long")
+#target_compile_options(${BII_LIB_TARGET} PUBLIC "-m32" "-D__int128=unsigned long long")
 
 FIND_LIBRARY(sfml-system REQUIRED
-	         NAMES sfml-system
+	         NAMES libsfml-system.so
 	         PATHS ${SFML_LIBS_PATH})
 FIND_LIBRARY(sfml-window REQUIRED
 	         NAMES sfml-window
