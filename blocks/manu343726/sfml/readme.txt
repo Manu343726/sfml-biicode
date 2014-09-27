@@ -5,36 +5,20 @@ SFML is a simple, fast, cross-platform and object-oriented multimedia API. It pr
 audio and network.
 It is written in C++, and has bindings for various languages such as C, .Net, Ruby, Python.
 
-Authors
+See 
+
+Biicode
 -------
 
-Laurent Gomila - main developer (laurent.gom@gmail.com)
-Marco Antognini - OS X developer (antognini.marco@gmail.com)
+This block contains the SFML library, precompiled for multiple platforms. It links automatically the required libraries when you use them via #include "manu343726/sfml/some_header.hpp"
+instead of recompiling the entire SFML libraries. The suppoted platforms are:
 
-Download
---------
+ - Linux x86: Only follow the biicode motto "Just an #include", do bii cpp:configure and bii cpp:build, and your awesome block is ready to be executed.
 
-You can get the latest official release on SFML website (http://www.sfml-dev.org/download.php).
-You can also get the current development version from the git repository (https://github.com/LaurentGomila/SFML).
+ - Linux x86_64: Almost the same as the 32 bit version. #include and bii cpp:build.
+ 
+ - Windows x86_64: There are binaries for the MinGW toolchain only. To avoid issues with MinGW and your PATH, use the Unix Makefiles generator instead of the default one. So your workflow becomes: #include, bii cpp:configure -G "Unix 
+   Makefiles", bii cpp:build. Then copy the dlls located at deps/manu343726/sfml/lib/win64/MinGW on into your bin directory. 
+   All these steps will be automated in the future, please be patient!
 
-Install
--------
-
-Follow the instructions of the tutorials (http://www.sfml-dev.org/tutorials.php), there is one for each platform/compiler that SFML supports.
-
-Learn
------
-
-There are several places to learn SFML:
-* The official tutorials (http://www.sfml-dev.org/resources.php#tutorials)
-* The online API documentation (http://www.sfml-dev.org/resources.php#documentation)
-* The community wiki (https://github.com/LaurentGomila/SFML/wiki/)
-* The community forum (http://en.sfml-dev.org/forums/) (or http://fr.sfml-dev.org/forums/ for french people)
-
-Contribute
-----------
-
-SFML is an open-source project, and it needs your help to go on growing and improving.
-Don't hesitate to post suggestions or bug reports on the forum (http://en.sfml-dev.org/forums/),
-submit patches by e-mail, or post new bugs/features requests on the task tracker (https://github.com/LaurentGomila/SFML/issues/).
-You can even fork the project on github, maintain your own version and send us pull requests periodically to merge your work.
+ - Windows x86: I haven't tested this platform in depth, but the workflow should be the same as the above for 64 bit windows, but change the path deps/manu343726/sfml/lib/win64/MinGW to deps/manu343726/sfml/lib/win32/MinGW.

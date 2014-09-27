@@ -61,19 +61,26 @@ ADD_BIICODE_TARGETS()
 set(SFML_INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/..)
 target_include_directories(${BII_BLOCK_TARGETS} PUBLIC ${SFML_INCLUDE_PATH})
 
+set(SFML_LIBS_PATH_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/lib/ CACHE PATH "SFML binaries path root")
+
+set(BIN_DIR "C:/Users/Manu343726/Documents/Github/sfml-biicode/bin")
 
 
-
-
-
-
-if(CMAKE_SIZEOF_VOID_P MATCHES 4)
-    set(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib/nix32 CACHE PATH "SFML UNIX32 binaries path")    
-else()
-    set(SFML_LIBS_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib/nix64 CACHE PATH "SFML UNIX64 binaries path")
+if(UNIX)
+    if(CMAKE_SIZEOF_VOID_P MATCHES 4)
+        set(SFML_LIBS_PATH ${SFML_LIBS_PATH_ROOT}/nix32 CACHE PATH "SFML UNIX32 binaries path")    
+    else()
+        set(SFML_LIBS_PATH ${SFML_LIBS_PATH_ROOT}/nix64 CACHE PATH "SFML UNIX64 binaries path")
+    endif()
+elseif(WIN32)
+    if(CMAKE_SIZEOF_VOID_P MATCHES 4)
+        set(SFML_LIBS_PATH ${SFML_LIBS_PATH_ROOT}/win32/MinGW CACHE PATH "SFML WIN32 MinGW (GCC) binaries path")    
+    else()
+        set(SFML_LIBS_PATH ${SFML_LIBS_PATH_ROOT}/win64/MinGW CACHE PATH "SFML WIN64 MinGW (GCC) binaries path")
+    endif()
 endif()
 
-
+message(STATUS "Target binaries path root: ${SFML_LIBS_PATH_ROOT}")
 message(STATUS "Target binaries path: ${SFML_LIBS_PATH}")
 
 
@@ -105,7 +112,17 @@ SET(SFML_LIBS ${sfml-system-lib} ${sfml-window-lib}
 TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${SFML_LIBS})
 
 
+if(WIN32)
+    message(STATUS "Copying Windows .dlls to ${BIN_DIR}")
 
+
+    foreach(dll ${SFML_LIBS})
+        message(STATUS "Coyping dll ${dll}")
+
+        add_custom_command(TARGET copy PRE_BUILD
+                           COMMAND ${CMAKE_COMMAND} -E copy ${dll} ${BIN_DIR})
+    endforeach()
+endif()
 
 
 
