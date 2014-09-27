@@ -82,11 +82,11 @@ manu343726_sfml_blocktests_main_EXTERNAL_OBJECTS =
 /home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: manu343726/sfml_blocktests/CMakeFiles/manu343726_sfml_blocktests_main.dir/main.cpp.o
 /home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: manu343726/sfml_blocktests/CMakeFiles/manu343726_sfml_blocktests_main.dir/build.make
 /home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: manu343726/sfml/libmanu343726_sfml.a
-/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-system.so
-/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-window.so
-/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-graphics.so
-/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-audio.so
-/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-network.so
+/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-system.so
+/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-window.so
+/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-graphics.so
+/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-audio.so
+/home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: /home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-network.so
 /home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main: manu343726/sfml_blocktests/CMakeFiles/manu343726_sfml_blocktests_main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/manu343726/Documentos/sfml-biicode/bin/manu343726_sfml_blocktests_main"
 	cd /home/manu343726/Documentos/sfml-biicode/build/manu343726/sfml_blocktests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/manu343726_sfml_blocktests_main.dir/link.txt --verbose=$(VERBOSE)

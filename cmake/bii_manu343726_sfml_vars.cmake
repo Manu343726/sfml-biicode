@@ -2,7 +2,7 @@
 # True if the library is actually to be created in this block
 SET(BII_CREATE_LIB True)
 # All the source code files of this library
-SET(BII_LIB_SRC  Window.hpp)
+SET(BII_LIB_SRC  Graphics.hpp)
 # STATIC or SHARED
 SET(BII_LIB_TYPE STATIC)
 # Data files that have to be copied to bin 

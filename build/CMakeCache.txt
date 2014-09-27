@@ -168,11 +168,14 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//SFML UNIX64 binaries path
+SFML_LIBS_PATH:PATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64
+
 //Dependencies for the target
-manu343726_sfml_LIB_DEPENDS:STATIC=general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-system.so;general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-window.so;general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-graphics.so;general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-audio.so;general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-network.so;
+manu343726_sfml_LIB_DEPENDS:STATIC=general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-system.so;general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-window.so;general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-graphics.so;general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-audio.so;general;/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-network.so;
 
 //Path to a library.
-sfml-audio-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-audio.so
+sfml-audio-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-audio.so
 
 //Value Computed by CMake
 sfml-biicode_BINARY_DIR:STATIC=/home/manu343726/Documentos/sfml-biicode/build
@@ -181,16 +184,16 @@ sfml-biicode_BINARY_DIR:STATIC=/home/manu343726/Documentos/sfml-biicode/build
 sfml-biicode_SOURCE_DIR:STATIC=/home/manu343726/Documentos/sfml-biicode/cmake
 
 //Path to a library.
-sfml-graphics-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-graphics.so
+sfml-graphics-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-graphics.so
 
 //Path to a library.
-sfml-network-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-network.so
+sfml-network-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-network.so
 
 //Path to a library.
-sfml-system-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-system.so
+sfml-system-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-system.so
 
 //Path to a library.
-sfml-window-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/libsfml-window.so
+sfml-window-lib:FILEPATH=/home/manu343726/Documentos/sfml-biicode/blocks/manu343726/sfml/lib/nix64/libsfml-window.so
 
 
 ########################
