@@ -80,6 +80,7 @@ elseif(WIN32)
     endif()
 endif()
 
+message(STATUS "C++ compiler: ")
 message(STATUS "Target binaries path root: ${SFML_LIBS_PATH_ROOT}")
 message(STATUS "Target binaries path: ${SFML_LIBS_PATH}")
 
@@ -113,15 +114,12 @@ TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${SFML_LIBS})
 
 
 if(WIN32)
-    message(STATUS "Copying Windows .dlls to ${BIN_DIR}")
+    message(STATUS "Copying Windows .dlls to " ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 
-    foreach(dll ${SFML_LIBS})
-        message(STATUS "Coyping dll ${dll}")
-
-        add_custom_command(TARGET copy PRE_BUILD
-                           COMMAND ${CMAKE_COMMAND} -E copy ${dll} ${BIN_DIR})
-    endforeach()
+    add_custom_command(TARGET ${BII_LIB_TARGET} POST_BUILD
+    	               COMMAND ${CMAKE_COMMAND} -E copy_directory
+    	               ${SFML_LIBS_PATH} ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 endif()
 
 
