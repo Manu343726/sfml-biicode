@@ -1,2 +1,2 @@
-cpp: {generator: MinGW Makefiles}
+cpp: {generator: Unix Makefiles}
 os: {arch: 32bit, family: Linux, subfamily: ManjaroLinux, version: 0.8.10}

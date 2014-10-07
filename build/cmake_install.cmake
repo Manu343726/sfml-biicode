@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Manuel/Documents/GitHub/sfml-biicode/cmake
+# Install script for directory: /home/manu343726/Documentos/sfml-biicode/cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/sfml-biicode")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,10 +27,15 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/manu343726/sfml_blocktests/cmake_install.cmake")
-  include("C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/manu343726/sfml/cmake_install.cmake")
+  include("/home/manu343726/Documentos/sfml-biicode/build/manu343726/sfml_blocktests/cmake_install.cmake")
+  include("/home/manu343726/Documentos/sfml-biicode/build/manu343726/sfml/cmake_install.cmake")
 
 endif()
 
@@ -40,7 +45,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/manu343726/Documentos/sfml-biicode/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "C:/Users/Manuel/Documents/GitHub/sfml-biicode/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/manu343726/Documentos/sfml-biicode/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()
