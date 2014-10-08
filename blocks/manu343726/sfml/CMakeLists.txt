@@ -58,33 +58,39 @@ ADD_BIICODE_TARGETS()
 #     ...
 # endif()
 
+# SFML includes:
+
 set(SFML_INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/..)
 target_include_directories(${BII_BLOCK_TARGETS} PUBLIC ${SFML_INCLUDE_PATH})
 
+
+#SFML precompiled binaries:
+
 set(SFML_LIBS_PATH_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/lib/ CACHE PATH "SFML binaries path root")
 
-set(BIN_DIR "C:/Users/Manu343726/Documents/Github/sfml-biicode/bin")
-
-
 if(UNIX)
-    if(CMAKE_SIZEOF_VOID_P MATCHES 4)
+    if(CMAKE_SIZEOF_VOID_P MATCHES 4) # UNIX 32
         set(SFML_LIBS_PATH ${SFML_LIBS_PATH_ROOT}/nix32 CACHE PATH "SFML UNIX32 binaries path")    
-    else()
+    else()                            # UNIX 64
         set(SFML_LIBS_PATH ${SFML_LIBS_PATH_ROOT}/nix64 CACHE PATH "SFML UNIX64 binaries path")
     endif()
-elseif(WIN32)
-    if(CMAKE_SIZEOF_VOID_P MATCHES 4)
+elseif(WIN32)       
+
+    # MinGW support only yet. Configure using Unix Makefiles generator.
+    message(WARNING "MinGW GCC support only, use 'Unix Makefiles' generator only")
+
+    if(CMAKE_SIZEOF_VOID_P MATCHES 4) # WIN 32
         set(SFML_LIBS_PATH ${SFML_LIBS_PATH_ROOT}/win32/MinGW CACHE PATH "SFML WIN32 MinGW (GCC) binaries path")    
-    else()
+    else()                            # WIN 64
         set(SFML_LIBS_PATH ${SFML_LIBS_PATH_ROOT}/win64/MinGW CACHE PATH "SFML WIN64 MinGW (GCC) binaries path")
     endif()
 endif()
 
-message(STATUS "C++ compiler: ")
+# Some debugging stuff...
 message(STATUS "Target binaries path root: ${SFML_LIBS_PATH_ROOT}")
 message(STATUS "Target binaries path: ${SFML_LIBS_PATH}")
 
-
+# Find the five sfml libraries and list these targets as a unique SFML_LIBS target:
 FIND_LIBRARY(sfml-system-lib
 	         NAMES sfml-system system
              PATHS ${SFML_LIBS_PATH} NO_DEFAULT_PATH)
@@ -110,9 +116,10 @@ SET(SFML_LIBS ${sfml-system-lib} ${sfml-window-lib}
 	          ${sfml-graphics-lib} ${sfml-audio-lib}
 	          ${sfml-network-lib})
 
+# Link biicode target with sfml libraries:
 TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${SFML_LIBS})
 
-
+# On Windows copy the precompiled .dlls to the bin directory to make the final executable work properly:
 if(WIN32)
     message(STATUS "Copying Windows .dlls to " ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
