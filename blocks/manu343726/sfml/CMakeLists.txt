@@ -112,12 +112,22 @@ FIND_LIBRARY(sfml-network-lib
              PATHS ${SFML_LIBS_PATH} NO_DEFAULT_PATH)
 
 
-SET(SFML_LIBS ${sfml-system-lib} ${sfml-window-lib}
-	          ${sfml-graphics-lib} ${sfml-audio-lib}
-	          ${sfml-network-lib})
-
 # Link biicode target with sfml libraries:
-TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${SFML_LIBS})
+if(sfml-system-lib) 
+    TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-system-lib})
+endif()
+if(sfml-window-lib) 
+    TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-window-lib})
+endif()
+if(sfml-graphics-lib) 
+    TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-graphics-lib})
+endif()
+if(sfml-audio-lib) 
+    TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-audio-lib})
+endif()
+if(sfml-network-lib) 
+    TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-network-lib})
+endif()
 
 # On Windows copy the precompiled .dlls to the bin directory to make the final executable work properly:
 if(WIN32)

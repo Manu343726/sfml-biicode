@@ -1,1 +1,3 @@
+# Set manu343726/ (The parent of the block root directory) as an include directory for the SFML headers
+/..
 /
