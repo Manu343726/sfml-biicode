@@ -113,19 +113,24 @@ FIND_LIBRARY(sfml-network-lib
 
 
 # Link biicode target with sfml libraries:
-if(sfml-system-lib) 
+if(sfml-system-lib)
+    message( STATUS "Linking with SFML system library..." )
     TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-system-lib})
 endif()
 if(sfml-window-lib) 
+    message( STATUS "Linking with SFML window library..." )
     TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-window-lib})
 endif()
 if(sfml-graphics-lib) 
+    message( STATUS "Linking with SFML graphics library..." )
     TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-graphics-lib})
 endif()
 if(sfml-audio-lib) 
+    message( STATUS "Linking with SFML audio library..." )
     TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-audio-lib})
 endif()
 if(sfml-network-lib) 
+    message( STATUS "Linking with SFML network library..." )
     TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-network-lib})
 endif()
 
