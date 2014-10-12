@@ -4,4 +4,4 @@ System.hpp + *sfml-system*
 Window.hpp + *sfml-window*
 Graphics.hpp + *sfml-graphics*
 Audio.hpp + *sfml-audio*
-NetWork.hpp + *sfml-network*
+Network.hpp + *sfml-network*
