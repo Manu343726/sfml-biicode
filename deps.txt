@@ -1,0 +1,436 @@
+INFO: There is a new version of biicode. Download it at https://www.biicode.com/downloads
+INFO: Processing changes...
+manu343726/sfml depends on:
+       manu343726/sfml (self)
+          Audio/Export.hpp
+                Audio/Listener.hpp (E)
+                Audio/Music.hpp (E)
+                Audio/Sound.hpp (E)
+                Audio/SoundBuffer.hpp (E)
+                Audio/SoundBufferRecorder.hpp (E)
+                Audio/SoundRecorder.hpp (E)
+                Audio/SoundSource.hpp (E)
+                Audio/SoundStream.hpp (E)
+          Audio/Listener.hpp
+                Audio.hpp (E)
+          Audio/Music.hpp
+                Audio.hpp (E)
+          Audio/Sound.hpp
+                Audio.hpp (E)
+          Audio/SoundBuffer.hpp
+                Audio.hpp (E)
+                Audio/SoundBufferRecorder.hpp (E)
+          Audio/SoundBufferRecorder.hpp
+                Audio.hpp (E)
+          Audio/SoundRecorder.hpp
+                Audio.hpp (E)
+                Audio/SoundBufferRecorder.hpp (E)
+          Audio/SoundSource.hpp
+                Audio/Sound.hpp (E)
+                Audio/SoundStream.hpp (E)
+          Audio/SoundStream.hpp
+                Audio.hpp (E)
+                Audio/Music.hpp (E)
+          Config.hpp
+                Audio/Export.hpp (E)
+                Graphics/Export.hpp (E)
+                Network/Export.hpp (E)
+                Network/SocketHandle.hpp (E)
+                OpenGL.hpp (E)
+                System.hpp (E)
+                System/Export.hpp (E)
+                System/InputStream.hpp (E)
+                System/Utf.hpp (E)
+                Window/Event.hpp (E)
+                Window/Export.hpp (E)
+                Window/WindowHandle.hpp (E)
+          Graphics/BlendMode.hpp
+                Graphics.hpp (E)
+                Graphics/RenderStates.hpp (E)
+                Graphics/RenderTarget.hpp (E)
+          Graphics/CircleShape.hpp
+                Graphics.hpp (E)
+          Graphics/Color.hpp
+                Graphics.hpp (E)
+                Graphics/Image.hpp (E)
+                Graphics/RenderTarget.hpp (E)
+                Graphics/Shader.hpp (E)
+                Graphics/Vertex.hpp (E)
+          Graphics/ConvexShape.hpp
+                Graphics.hpp (E)
+          Graphics/Drawable.hpp
+                Graphics/Shape.hpp (E)
+                Graphics/Sprite.hpp (E)
+                Graphics/Text.hpp (E)
+                Graphics/VertexArray.hpp (E)
+          Graphics/Export.hpp
+                Graphics/CircleShape.hpp (E)
+                Graphics/Color.hpp (E)
+                Graphics/ConvexShape.hpp (E)
+                Graphics/Drawable.hpp (E)
+                Graphics/Font.hpp (E)
+                Graphics/Glyph.hpp (E)
+                Graphics/Image.hpp (E)
+                Graphics/RectangleShape.hpp (E)
+                Graphics/RenderStates.hpp (E)
+                Graphics/RenderTarget.hpp (E)
+                Graphics/RenderTexture.hpp (E)
+                Graphics/RenderWindow.hpp (E)
+                Graphics/Shader.hpp (E)
+                Graphics/Shape.hpp (E)
+                Graphics/Sprite.hpp (E)
+                Graphics/Text.hpp (E)
+                Graphics/Texture.hpp (E)
+                Graphics/Transform.hpp (E)
+                Graphics/Transformable.hpp (E)
+                Graphics/Vertex.hpp (E)
+                Graphics/VertexArray.hpp (E)
+                Graphics/View.hpp (E)
+          Graphics/Font.hpp
+                Graphics.hpp (E)
+                Graphics/Text.hpp (E)
+          Graphics/Glyph.hpp
+                Graphics.hpp (E)
+                Graphics/Font.hpp (E)
+          Graphics/Image.hpp
+                Graphics.hpp (E)
+                Graphics/RenderWindow.hpp (E)
+                Graphics/Texture.hpp (E)
+          Graphics/PrimitiveType.hpp
+                Graphics/RenderTarget.hpp (E)
+                Graphics/VertexArray.hpp (E)
+          Graphics/Rect.hpp
+                Graphics/Font.hpp (E)
+                Graphics/Glyph.hpp (E)
+                Graphics/Image.hpp (E)
+                Graphics/RenderTarget.hpp (E)
+                Graphics/Sprite.hpp (E)
+                Graphics/Text.hpp (E)
+                Graphics/Transform.hpp (E)
+                Graphics/VertexArray.hpp (E)
+                Graphics/View.hpp (E)
+          Graphics/Rect.inl
+                Graphics/Rect.hpp (E)
+          Graphics/RectangleShape.hpp
+                Graphics.hpp (E)
+          Graphics/RenderStates.hpp
+                Graphics.hpp (E)
+                Graphics/Drawable.hpp (E)
+                Graphics/RenderTarget.hpp (E)
+          Graphics/RenderTarget.hpp
+                Graphics/RenderTexture.hpp (E)
+                Graphics/RenderWindow.hpp (E)
+          Graphics/RenderTexture.hpp
+                Graphics.hpp (E)
+          Graphics/RenderWindow.hpp
+                Graphics.hpp (E)
+          Graphics/Shader.hpp
+                Graphics.hpp (E)
+          Graphics/Shape.hpp
+                Graphics.hpp (E)
+                Graphics/CircleShape.hpp (E)
+                Graphics/ConvexShape.hpp (E)
+                Graphics/RectangleShape.hpp (E)
+          Graphics/Sprite.hpp
+                Graphics.hpp (E)
+          Graphics/Text.hpp
+                Graphics.hpp (E)
+          Graphics/Texture.hpp
+                Graphics.hpp (E)
+                Graphics/Font.hpp (E)
+                Graphics/RenderTexture.hpp (E)
+          Graphics/Transform.hpp
+                Graphics.hpp (E)
+                Graphics/RenderStates.hpp (E)
+                Graphics/RenderTarget.hpp (E)
+                Graphics/Shader.hpp (E)
+                Graphics/Transformable.hpp (E)
+                Graphics/View.hpp (E)
+          Graphics/Transformable.hpp
+                Graphics/Shape.hpp (E)
+                Graphics/Sprite.hpp (E)
+                Graphics/Text.hpp (E)
+          Graphics/Vertex.hpp
+                Graphics.hpp (E)
+                Graphics/RenderTarget.hpp (E)
+                Graphics/Sprite.hpp (E)
+                Graphics/VertexArray.hpp (E)
+          Graphics/VertexArray.hpp
+                Graphics.hpp (E)
+                Graphics/Shape.hpp (E)
+                Graphics/Text.hpp (E)
+          Graphics/View.hpp
+                Graphics.hpp (E)
+                Graphics/RenderTarget.hpp (E)
+          Network/Export.hpp
+                Network/Ftp.hpp (E)
+                Network/Http.hpp (E)
+                Network/IpAddress.hpp (E)
+                Network/Packet.hpp (E)
+                Network/Socket.hpp (E)
+                Network/SocketSelector.hpp (E)
+                Network/TcpListener.hpp (E)
+                Network/TcpSocket.hpp (E)
+                Network/UdpSocket.hpp (E)
+          Network/Ftp.hpp
+                Network.hpp (E)
+          Network/Http.hpp
+                Network.hpp (E)
+          Network/IpAddress.hpp
+                Network.hpp (E)
+                Network/Http.hpp (E)
+          Network/Packet.hpp
+                Network.hpp (E)
+          Network/Socket.hpp
+                Network/TcpListener.hpp (E)
+                Network/TcpSocket.hpp (E)
+                Network/UdpSocket.hpp (E)
+          Network/SocketHandle.hpp
+                Network/Socket.hpp (E)
+          Network/SocketSelector.hpp
+                Network.hpp (E)
+          Network/TcpListener.hpp
+                Network.hpp (E)
+          Network/TcpSocket.hpp
+                Network.hpp (E)
+                Network/Ftp.hpp (E)
+                Network/Http.hpp (E)
+          Network/UdpSocket.hpp
+                Network.hpp (E)
+          System.hpp
+                Audio.hpp (E)
+                Network.hpp (E)
+                Window.hpp (E)
+          System/Clock.hpp
+                System.hpp (E)
+                Window/Window.hpp (E)
+          System/Err.hpp
+                System.hpp (E)
+          System/Export.hpp
+                System/Clock.hpp (E)
+                System/Err.hpp (E)
+                System/Lock.hpp (E)
+                System/Mutex.hpp (E)
+                System/NonCopyable.hpp (E)
+                System/Sleep.hpp (E)
+                System/String.hpp (E)
+                System/Thread.hpp (E)
+                System/ThreadLocal.hpp (E)
+                System/Time.hpp (E)
+          System/InputStream.hpp
+                System.hpp (E)
+          System/Lock.hpp
+                System.hpp (E)
+          System/Mutex.hpp
+                Audio/Music.hpp (E)
+                System.hpp (E)
+          System/NonCopyable.hpp
+                Graphics/RenderTarget.hpp (E)
+                Graphics/Shader.hpp (E)
+                Network/Ftp.hpp (E)
+                Network/Http.hpp (E)
+                Network/Socket.hpp (E)
+                System/Lock.hpp (E)
+                System/Mutex.hpp (E)
+                System/Thread.hpp (E)
+                System/ThreadLocal.hpp (E)
+                Window/Context.hpp (E)
+                Window/Window.hpp (E)
+          System/Sleep.hpp
+                System.hpp (E)
+          System/String.hpp
+                Graphics/Font.hpp (E)
+                Graphics/Text.hpp (E)
+                System.hpp (E)
+                Window/Window.hpp (E)
+          System/Thread.hpp
+                Audio/SoundRecorder.hpp (E)
+                Audio/SoundStream.hpp (E)
+                System.hpp (E)
+          System/Thread.inl
+                System/Thread.hpp (E)
+          System/ThreadLocal.hpp
+                System.hpp (E)
+                System/ThreadLocalPtr.hpp (E)
+          System/ThreadLocalPtr.hpp
+                System.hpp (E)
+          System/ThreadLocalPtr.inl
+                System/ThreadLocalPtr.hpp (E)
+          System/Time.hpp
+                Audio/Music.hpp (E)
+                Audio/Sound.hpp (E)
+                Audio/SoundBuffer.hpp (E)
+                Audio/SoundStream.hpp (E)
+                Network/Ftp.hpp (E)
+                Network/Http.hpp (E)
+                Network/IpAddress.hpp (E)
+                Network/SocketSelector.hpp (E)
+                Network/TcpSocket.hpp (E)
+                System/Clock.hpp (E)
+                System/Sleep.hpp (E)
+          System/Utf.hpp
+                System.hpp (E)
+          System/Utf.inl
+                System/Utf.hpp (E)
+          System/Vector2.hpp
+                Graphics/Font.hpp (E)
+                Graphics/Rect.hpp (E)
+                Graphics/Shader.hpp (E)
+                Graphics/Shape.hpp (E)
+                Graphics/Transform.hpp (E)
+                Graphics/Vertex.hpp (E)
+                Graphics/View.hpp (E)
+                System.hpp (E)
+                Window/Mouse.hpp (E)
+                Window/Window.hpp (E)
+          System/Vector2.inl
+                System/Vector2.hpp (E)
+          System/Vector3.hpp
+                Audio/Listener.hpp (E)
+                Audio/SoundSource.hpp (E)
+                Graphics/Shader.hpp (E)
+                System.hpp (E)
+          System/Vector3.inl
+                System/Vector3.hpp (E)
+          Window.hpp
+                Graphics.hpp (E)
+          Window/Context.hpp
+                Window.hpp (E)
+          Window/ContextSettings.hpp
+                Window.hpp (E)
+                Window/Context.hpp (E)
+                Window/Window.hpp (E)
+          Window/Event.hpp
+                Window.hpp (E)
+          Window/Export.hpp
+                Window/Context.hpp (E)
+                Window/GlResource.hpp (E)
+                Window/Joystick.hpp (E)
+                Window/Keyboard.hpp (E)
+                Window/Mouse.hpp (E)
+                Window/VideoMode.hpp (E)
+                Window/Window.hpp (E)
+          Window/GlResource.hpp
+                Graphics/Shader.hpp (E)
+                Graphics/Texture.hpp (E)
+                Window/Context.hpp (E)
+                Window/Window.hpp (E)
+          Window/Joystick.hpp
+                Window.hpp (E)
+                Window/Event.hpp (E)
+          Window/Keyboard.hpp
+                Window.hpp (E)
+                Window/Event.hpp (E)
+          Window/Mouse.hpp
+                Window.hpp (E)
+                Window/Event.hpp (E)
+          Window/VideoMode.hpp
+                Window.hpp (E)
+                Window/Window.hpp (E)
+          Window/Window.hpp
+                Graphics/RenderWindow.hpp (E)
+                Window.hpp (E)
+          Window/WindowHandle.hpp
+                Window/Window.hpp (E)
+          Window/WindowStyle.hpp
+                Window.hpp (E)
+                Window/Window.hpp (E)
+          lib/nix32/libsfml-audio.so.2
+                Audio.hpp (I)
+          lib/nix32/libsfml-audio.so.2.1
+                Audio.hpp (I)
+          lib/nix32/libsfml-graphics.so.2
+                Graphics.hpp (I)
+          lib/nix32/libsfml-graphics.so.2.1
+                Graphics.hpp (I)
+          lib/nix32/libsfml-network.so.2
+                Network.hpp (I)
+          lib/nix32/libsfml-network.so.2.1
+                Network.hpp (I)
+          lib/nix32/libsfml-system.so.2
+                System.hpp (I)
+          lib/nix32/libsfml-system.so.2.1
+                System.hpp (I)
+          lib/nix32/libsfml-window.so.2
+                Window.hpp (I)
+          lib/nix32/libsfml-window.so.2.1
+                Window.hpp (I)
+          lib/win64/MinGW/libsfml-audio.a
+                Audio.hpp (I)
+          lib/win64/MinGW/libsfml-graphics.a
+                Graphics.hpp (I)
+          lib/win64/MinGW/libsfml-network.a
+                Network.hpp (I)
+          lib/win64/MinGW/libsfml-system.a
+                System.hpp (I)
+          lib/win64/MinGW/libsfml-window.a
+                Window.hpp (I)
+       system:
+          GL/gl.h
+                OpenGL.hpp
+          GL/glu.h
+                OpenGL.hpp
+          OpenGL/gl.h
+                OpenGL.hpp
+          OpenGL/glu.h
+                OpenGL.hpp
+          algorithm
+                Graphics/Rect.hpp
+                System/Utf.hpp
+          basetsd.h
+                Network/SocketHandle.hpp
+          cstdlib
+                Audio/Sound.hpp
+                Audio/SoundStream.hpp
+                System/Thread.hpp
+                System/ThreadLocal.hpp
+                System/Utf.hpp
+          istream
+                Network/IpAddress.hpp
+          locale
+                System/String.hpp
+                System/Utf.hpp
+          map
+                Graphics/Font.hpp
+                Graphics/Shader.hpp
+                Network/Http.hpp
+          ostream
+                Network/IpAddress.hpp
+                System/Err.hpp
+          set
+                Audio/SoundBuffer.hpp
+          string
+                Audio/Music.hpp
+                Audio/SoundBuffer.hpp
+                Graphics/Font.hpp
+                Graphics/Image.hpp
+                Graphics/RenderWindow.hpp
+                Graphics/Shader.hpp
+                Graphics/Text.hpp
+                Network/Ftp.hpp
+                Network/Http.hpp
+                Network/IpAddress.hpp
+                Network/Packet.hpp
+                System/String.hpp
+                System/Utf.hpp
+          vector
+                Audio/Music.hpp
+                Audio/SoundBuffer.hpp
+                Audio/SoundBufferRecorder.hpp
+                Audio/SoundRecorder.hpp
+                Graphics/ConvexShape.hpp
+                Graphics/Font.hpp
+                Graphics/Image.hpp
+                Graphics/Text.hpp
+                Graphics/VertexArray.hpp
+                Network/Ftp.hpp
+                Network/Packet.hpp
+                Network/Socket.hpp
+                Network/UdpSocket.hpp
+                Window/VideoMode.hpp
+          windows.h
+                OpenGL.hpp
+manu343726/sfml_blocktests depends on:
+       manu343726/sfml
+          Graphics.hpp
+                main.cpp (E)

@@ -1,0 +1,4 @@
+# Override the default config, don't ignore our precompiled binaries!!!
+
+!*.so
+!*.dll

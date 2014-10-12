@@ -1,7 +1,7 @@
 # Match each SFML header with its corresponding precompiled library
 
-System.hpp + *sfml-system*
-Window.hpp + *sfml-window*
-Graphics.hpp + *sfml-graphics*
-Audio.hpp + *sfml-audio*
-Network.hpp + *sfml-network*
+System.hpp + !*sfml-system*
+Window.hpp + !*sfml-window*
+Graphics.hpp + !*sfml-graphics*
+Audio.hpp + !*sfml-audio*
+Network.hpp + !*sfml-network*
