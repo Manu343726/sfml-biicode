@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,22 +22,22 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_WINDOW_HPP
-#define sfml_WINDOW_HPP
+#ifndef SFML_WINDOW_HPP
+#define SFML_WINDOW_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Window/Export.hpp>
-#include <sfml/Window/ContextSettings.hpp>
-#include <sfml/Window/VideoMode.hpp>
-#include <sfml/Window/WindowHandle.hpp>
-#include <sfml/Window/WindowStyle.hpp>
-#include <sfml/Window/GlResource.hpp>
-#include <sfml/System/Clock.hpp>
-#include <sfml/System/Vector2.hpp>
-#include <sfml/System/NonCopyable.hpp>
-#include <sfml/System/String.hpp>
+#include <SFML/Window/Export.hpp>
+#include <SFML/Window/ContextSettings.hpp>
+#include <SFML/Window/VideoMode.hpp>
+#include <SFML/Window/WindowHandle.hpp>
+#include <SFML/Window/WindowStyle.hpp>
+#include <SFML/Window/GlResource.hpp>
+#include <SFML/System/Clock.hpp>
+#include <SFML/System/Vector2.hpp>
+#include <SFML/System/NonCopyable.hpp>
+#include <SFML/System/String.hpp>
 
 
 namespace sf
@@ -54,7 +54,7 @@ class Event;
 /// \brief Window that serves as a target for OpenGL rendering
 ///
 ////////////////////////////////////////////////////////////
-class sfml_WINDOW_API Window : GlResource, NonCopyable
+class SFML_WINDOW_API Window : GlResource, NonCopyable
 {
 public :
 
@@ -62,7 +62,7 @@ public :
     /// \brief Default constructor
     ///
     /// This constructor doesn't actually create the window,
-    /// use the other constructors or call "create" to do so.
+    /// use the other constructors or call create() to do so.
     ///
     ////////////////////////////////////////////////////////////
     Window();
@@ -82,7 +82,7 @@ public :
     ///
     /// \param mode     Video mode to use (defines the width, height and depth of the rendering area of the window)
     /// \param title    Title of the window
-    /// \param style    Window style
+    /// \param style    %Window style, a bitwise OR combination of sf::Style enumerators
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
@@ -98,7 +98,8 @@ public :
     /// advanced OpenGL context settings such as antialiasing,
     /// depth-buffer bits, etc.
     ///
-    /// \param handle   Platform-specific handle of the control
+    /// \param handle   Platform-specific handle of the control (\a HWND on
+    ///                 Windows, \a %Window on Linux/FreeBSD, \a NSWindow on OS X)
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
@@ -107,7 +108,7 @@ public :
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
     ///
-    /// Closes the window and free all the resources attached to it.
+    /// Closes the window and frees all the resources attached to it.
     ///
     ////////////////////////////////////////////////////////////
     virtual ~Window();
@@ -119,9 +120,13 @@ public :
     /// If \a style contains Style::Fullscreen, then \a mode
     /// must be a valid video mode.
     ///
+    /// The fourth parameter is an optional structure specifying
+    /// advanced OpenGL context settings such as antialiasing,
+    /// depth-buffer bits, etc.
+    ///
     /// \param mode     Video mode to use (defines the width, height and depth of the rendering area of the window)
     /// \param title    Title of the window
-    /// \param style    Window style
+    /// \param style    %Window style, a bitwise OR combination of sf::Style enumerators
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
@@ -134,7 +139,12 @@ public :
     /// rendering area into an already existing control.
     /// If the window was already created, it closes it first.
     ///
-    /// \param handle   Platform-specific handle of the control
+    /// The second parameter is an optional structure specifying
+    /// advanced OpenGL context settings such as antialiasing,
+    /// depth-buffer bits, etc.
+    ///
+    /// \param handle   Platform-specific handle of the control (\a HWND on
+    ///                 Windows, \a %Window on Linux/FreeBSD, \a NSWindow on OS X)
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
@@ -170,7 +180,7 @@ public :
     /// Note that these settings may be different from what was
     /// passed to the constructor or the create() function,
     /// if one or more settings were not supported. In this case,
-    /// sfml chose the closest match.
+    /// SFML chose the closest match.
     ///
     /// \return Structure containing the OpenGL context settings
     ///
@@ -274,7 +284,7 @@ public :
     /// \see getSize
     ///
     ////////////////////////////////////////////////////////////
-    void setSize(const Vector2u size);
+    void setSize(const Vector2u& size);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the title of the window
@@ -296,7 +306,9 @@ public :
     ///
     /// \param width  Icon's width, in pixels
     /// \param height Icon's height, in pixels
-    /// \param pixels Pointer to the array of pixels in memory
+    /// \param pixels Pointer to the array of pixels in memory. The
+    ///               pixels are copied, so you need not keep the
+    ///               source alive after calling this function.
     ///
     /// \see setTitle
     ///
@@ -358,7 +370,7 @@ public :
     /// If a limit is set, the window will use a small delay after
     /// each call to display() to ensure that the current frame
     /// lasted long enough to match the framerate limit.
-    /// sfml will try to match the given limit as much as it can,
+    /// SFML will try to match the given limit as much as it can,
     /// but since it internally uses sf::sleep, whose precision
     /// depends on the underlying OS, the results may be a little
     /// unprecise as well (for example, you can get 65 FPS when
@@ -415,8 +427,10 @@ public :
     /// The type of the returned handle is sf::WindowHandle,
     /// which is a typedef to the handle type defined by the OS.
     /// You shouldn't need to use this function, unless you have
-    /// very specific stuff to implement that sfml doesn't support,
+    /// very specific stuff to implement that SFML doesn't support,
     /// or implement a temporary workaround until a bug is fixed.
+    /// The type is \a HWND on Windows, \a %Window on Linux/FreeBSD
+    /// and \a NSWindow on OS X.
     ///
     /// \return System handle of the window
     ///
@@ -479,7 +493,7 @@ private:
 } // namespace sf
 
 
-#endif // sfml_WINDOW_HPP
+#endif // SFML_WINDOW_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -511,7 +525,7 @@ private:
 /// Usage example:
 /// \code
 /// // Declare and create a new window
-/// sf::Window window(sf::VideoMode(800, 600), "sfml window");
+/// sf::Window window(sf::VideoMode(800, 600), "SFML window");
 ///
 /// // Limit the framerate to 60 frames per second (this step is optional)
 /// window.setFramerateLimit(60);

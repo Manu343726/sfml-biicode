@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,16 +22,17 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_EVENT_HPP
-#define sfml_EVENT_HPP
+#ifndef SFML_EVENT_HPP
+#define SFML_EVENT_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Config.hpp>
-#include <sfml/Window/Joystick.hpp>
-#include <sfml/Window/Keyboard.hpp>
-#include <sfml/Window/Mouse.hpp>
+#include <SFML/Config.hpp>
+#include <SFML/Window/Joystick.hpp>
+#include <SFML/Window/Keyboard.hpp>
+#include <SFML/Window/Mouse.hpp>
+#include <SFML/Window/Sensor.hpp>
 
 
 namespace sf
@@ -142,6 +143,29 @@ public :
     };
 
     ////////////////////////////////////////////////////////////
+    /// \brief Touch events parameters (TouchBegan, TouchMoved, TouchEnded)
+    ///
+    ////////////////////////////////////////////////////////////
+    struct TouchEvent
+    {
+        unsigned int finger; ///< Index of the finger in case of multi-touch events
+        int x;               ///< X position of the touch, relative to the left of the owner window
+        int y;               ///< Y position of the touch, relative to the top of the owner window
+    };
+    
+    ////////////////////////////////////////////////////////////
+    /// \brief Sensor event parameters (SensorChanged)
+    ///
+    ////////////////////////////////////////////////////////////
+    struct SensorEvent
+    {
+		Sensor::Type type; ///< Type of the sensor
+		float x;           ///< Current value of the sensor on X axis
+		float y;           ///< Current value of the sensor on Y axis
+		float z;           ///< Current value of the sensor on Z axis
+    };
+
+    ////////////////////////////////////////////////////////////
     /// \brief Enumeration of the different types of events
     ///
     ////////////////////////////////////////////////////////////
@@ -165,6 +189,10 @@ public :
         JoystickMoved,          ///< The joystick moved along an axis (data in event.joystickMove)
         JoystickConnected,      ///< A joystick was connected (data in event.joystickConnect)
         JoystickDisconnected,   ///< A joystick was disconnected (data in event.joystickConnect)
+        TouchBegan,             ///< A touch event began (data in event.touch)
+        TouchMoved,             ///< A touch moved (data in event.touch)
+        TouchEnded,             ///< A touch event ended (data in event.touch)
+        SensorChanged,          ///< A sensor value changed (data in event.sensor)
 
         Count                   ///< Keep last -- the total number of event types
     };
@@ -185,13 +213,15 @@ public :
         JoystickMoveEvent    joystickMove;    ///< Joystick move event parameters (Event::JoystickMoved)
         JoystickButtonEvent  joystickButton;  ///< Joystick button event parameters (Event::JoystickButtonPressed, Event::JoystickButtonReleased)
         JoystickConnectEvent joystickConnect; ///< Joystick (dis)connect event parameters (Event::JoystickConnected, Event::JoystickDisconnected)
+        TouchEvent           touch;           ///< Touch events parameters (Event::TouchBegan, Event::TouchMoved, Event::TouchEnded)
+        SensorEvent          sensor;          ///< Sensor event parameters (Event::SensorChanged)
     };
 };
 
 } // namespace sf
 
 
-#endif // sfml_EVENT_HPP
+#endif // SFML_EVENT_HPP
 
 
 ////////////////////////////////////////////////////////////

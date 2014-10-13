@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,16 +22,16 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_CONTEXT_HPP
-#define sfml_CONTEXT_HPP
+#ifndef SFML_CONTEXT_HPP
+#define SFML_CONTEXT_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Window/Export.hpp>
-#include <sfml/Window/GlResource.hpp>
-#include <sfml/Window/ContextSettings.hpp>
-#include <sfml/System/NonCopyable.hpp>
+#include <SFML/Window/Export.hpp>
+#include <SFML/Window/GlResource.hpp>
+#include <SFML/Window/ContextSettings.hpp>
+#include <SFML/System/NonCopyable.hpp>
 
 
 namespace sf
@@ -45,7 +45,7 @@ namespace priv
 /// \brief Class holding a valid drawing context
 ///
 ////////////////////////////////////////////////////////////
-class sfml_WINDOW_API Context : GlResource, NonCopyable
+class SFML_WINDOW_API Context : GlResource, NonCopyable
 {
 public :
 
@@ -60,7 +60,7 @@ public :
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
     ///
-    /// The desctructor deactivates and destroys the context
+    /// The destructor deactivates and destroys the context
     ///
     ////////////////////////////////////////////////////////////
     ~Context();
@@ -101,7 +101,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_CONTEXT_HPP
+#endif // SFML_CONTEXT_HPP
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Context

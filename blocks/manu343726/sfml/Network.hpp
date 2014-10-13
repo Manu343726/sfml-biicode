@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,25 +22,25 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_NETWORK_HPP
-#define sfml_NETWORK_HPP
+#ifndef SFML_NETWORK_HPP
+#define SFML_NETWORK_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
 
-#include <sfml/System.hpp>
-#include <sfml/Network/Ftp.hpp>
-#include <sfml/Network/Http.hpp>
-#include <sfml/Network/IpAddress.hpp>
-#include <sfml/Network/Packet.hpp>
-#include <sfml/Network/SocketSelector.hpp>
-#include <sfml/Network/TcpListener.hpp>
-#include <sfml/Network/TcpSocket.hpp>
-#include <sfml/Network/UdpSocket.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Network/Ftp.hpp>
+#include <SFML/Network/Http.hpp>
+#include <SFML/Network/IpAddress.hpp>
+#include <SFML/Network/Packet.hpp>
+#include <SFML/Network/SocketSelector.hpp>
+#include <SFML/Network/TcpListener.hpp>
+#include <SFML/Network/TcpSocket.hpp>
+#include <SFML/Network/UdpSocket.hpp>
 
 
-#endif // sfml_NETWORK_HPP
+#endif // SFML_NETWORK_HPP
 
 ////////////////////////////////////////////////////////////
 /// \defgroup network Network module

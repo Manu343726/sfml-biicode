@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,8 +22,8 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_VECTOR2_HPP
-#define sfml_VECTOR2_HPP
+#ifndef SFML_VECTOR2_HPP
+#define SFML_VECTOR2_HPP
 
 
 namespace sf
@@ -247,7 +247,7 @@ bool operator ==(const Vector2<T>& left, const Vector2<T>& right);
 template <typename T>
 bool operator !=(const Vector2<T>& left, const Vector2<T>& right);
 
-#include <sfml/System/Vector2.inl>
+#include <SFML/System/Vector2.inl>
 
 // Define the most common types
 typedef Vector2<int>          Vector2i;
@@ -257,7 +257,7 @@ typedef Vector2<float>        Vector2f;
 } // namespace sf
 
 
-#endif // sfml_VECTOR2_HPP
+#endif // SFML_VECTOR2_HPP
 
 
 ////////////////////////////////////////////////////////////

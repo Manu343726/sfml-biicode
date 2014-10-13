@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_COLOR_HPP
-#define sfml_COLOR_HPP
+#ifndef SFML_COLOR_HPP
+#define SFML_COLOR_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
+#include <SFML/Graphics/Export.hpp>
 
 
 namespace sf
@@ -37,7 +37,7 @@ namespace sf
 /// \brief Utility class for manpulating RGBA colors
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API Color
+class SFML_GRAPHICS_API Color
 {
 public :
 
@@ -95,7 +95,7 @@ public :
 /// \return True if colors are equal, false if they are different
 ///
 ////////////////////////////////////////////////////////////
-sfml_GRAPHICS_API bool operator ==(const Color& left, const Color& right);
+SFML_GRAPHICS_API bool operator ==(const Color& left, const Color& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -109,7 +109,7 @@ sfml_GRAPHICS_API bool operator ==(const Color& left, const Color& right);
 /// \return True if colors are different, false if they are equal
 ///
 ////////////////////////////////////////////////////////////
-sfml_GRAPHICS_API bool operator !=(const Color& left, const Color& right);
+SFML_GRAPHICS_API bool operator !=(const Color& left, const Color& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -124,7 +124,22 @@ sfml_GRAPHICS_API bool operator !=(const Color& left, const Color& right);
 /// \return Result of \a left + \a right
 ///
 ////////////////////////////////////////////////////////////
-sfml_GRAPHICS_API Color operator +(const Color& left, const Color& right);
+SFML_GRAPHICS_API Color operator +(const Color& left, const Color& right);
+
+////////////////////////////////////////////////////////////
+/// \relates Color
+/// \brief Overload of the binary - operator
+///
+/// This operator returns the component-wise subtraction of two colors.
+/// Components below 0 are clamped to 0.
+///
+/// \param left  Left operand
+/// \param right Right operand
+///
+/// \return Result of \a left - \a right
+///
+////////////////////////////////////////////////////////////
+SFML_GRAPHICS_API Color operator -(const Color& left, const Color& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -141,7 +156,7 @@ sfml_GRAPHICS_API Color operator +(const Color& left, const Color& right);
 /// \return Result of \a left * \a right
 ///
 ////////////////////////////////////////////////////////////
-sfml_GRAPHICS_API Color operator *(const Color& left, const Color& right);
+SFML_GRAPHICS_API Color operator *(const Color& left, const Color& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -157,7 +172,23 @@ sfml_GRAPHICS_API Color operator *(const Color& left, const Color& right);
 /// \return Reference to \a left
 ///
 ////////////////////////////////////////////////////////////
-sfml_GRAPHICS_API Color& operator +=(Color& left, const Color& right);
+SFML_GRAPHICS_API Color& operator +=(Color& left, const Color& right);
+
+////////////////////////////////////////////////////////////
+/// \relates Color
+/// \brief Overload of the binary -= operator
+///
+/// This operator computes the component-wise subtraction of two colors,
+/// and assigns the result to the left operand.
+/// Components below 0 are clamped to 0.
+///
+/// \param left  Left operand
+/// \param right Right operand
+///
+/// \return Reference to \a left
+///
+////////////////////////////////////////////////////////////
+SFML_GRAPHICS_API Color& operator -=(Color& left, const Color& right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -175,12 +206,12 @@ sfml_GRAPHICS_API Color& operator +=(Color& left, const Color& right);
 /// \return Reference to \a left
 ///
 ////////////////////////////////////////////////////////////
-sfml_GRAPHICS_API Color& operator *=(Color& left, const Color& right);
+SFML_GRAPHICS_API Color& operator *=(Color& left, const Color& right);
 
 } // namespace sf
 
 
-#endif // sfml_COLOR_HPP
+#endif // SFML_COLOR_HPP
 
 
 ////////////////////////////////////////////////////////////

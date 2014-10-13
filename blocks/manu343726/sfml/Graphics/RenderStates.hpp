@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,15 +22,15 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_RENDERSTATES_HPP
-#define sfml_RENDERSTATES_HPP
+#ifndef SFML_RENDERSTATES_HPP
+#define SFML_RENDERSTATES_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/BlendMode.hpp>
-#include <sfml/Graphics/Transform.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/BlendMode.hpp>
+#include <SFML/Graphics/Transform.hpp>
 
 
 namespace sf
@@ -42,7 +42,7 @@ class Texture;
 /// \brief Define the states used for drawing to a RenderTarget
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API RenderStates
+class SFML_GRAPHICS_API RenderStates
 {
 public :
 
@@ -66,7 +66,7 @@ public :
     /// \param theBlendMode Blend mode to use
     ///
     ////////////////////////////////////////////////////////////
-    RenderStates(BlendMode theBlendMode);
+    RenderStates(const BlendMode& theBlendMode);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct a default set of render states with a custom transform
@@ -101,7 +101,7 @@ public :
     /// \param theShader    Shader to use
     ///
     ////////////////////////////////////////////////////////////
-    RenderStates(BlendMode theBlendMode, const Transform& theTransform,
+    RenderStates(const BlendMode& theBlendMode, const Transform& theTransform,
                  const Texture* theTexture, const Shader* theShader);
 
     ////////////////////////////////////////////////////////////
@@ -121,7 +121,7 @@ public :
 } // namespace sf
 
 
-#endif // sfml_RENDERSTATES_HPP
+#endif // SFML_RENDERSTATES_HPP
 
 
 ////////////////////////////////////////////////////////////

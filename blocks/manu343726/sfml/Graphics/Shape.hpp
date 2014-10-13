@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,17 +22,17 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_SHAPE_HPP
-#define sfml_SHAPE_HPP
+#ifndef SFML_SHAPE_HPP
+#define SFML_SHAPE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/Drawable.hpp>
-#include <sfml/Graphics/Transformable.hpp>
-#include <sfml/Graphics/VertexArray.hpp>
-#include <sfml/System/Vector2.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/Drawable.hpp>
+#include <SFML/Graphics/Transformable.hpp>
+#include <SFML/Graphics/VertexArray.hpp>
+#include <SFML/System/Vector2.hpp>
 
 
 namespace sf
@@ -41,7 +41,7 @@ namespace sf
 /// \brief Base class for textured shapes with outline
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API Shape : public Drawable, public Transformable
+class SFML_GRAPHICS_API Shape : public Drawable, public Transformable
 {
 public :
 
@@ -198,11 +198,14 @@ public :
     ////////////////////////////////////////////////////////////
     /// \brief Get a point of the shape
     ///
+    /// The returned point is in local coordinates, that is,
+    /// the shape's transforms (position, rotation, scale) are
+    /// not taken into account.
     /// The result is undefined if \a index is out of the valid range.
     ///
     /// \param index Index of the point to get, in range [0 .. getPointCount() - 1]
     ///
-    /// \return Index-th point of the shape
+    /// \return index-th point of the shape
     ///
     /// \see getPointCount
     ///
@@ -309,7 +312,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_SHAPE_HPP
+#endif // SFML_SHAPE_HPP
 
 
 ////////////////////////////////////////////////////////////

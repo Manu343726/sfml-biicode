@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_THREADLOCAL_HPP
-#define sfml_THREADLOCAL_HPP
+#ifndef SFML_THREADLOCAL_HPP
+#define SFML_THREADLOCAL_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/System/Export.hpp>
-#include <sfml/System/NonCopyable.hpp>
+#include <SFML/System/Export.hpp>
+#include <SFML/System/NonCopyable.hpp>
 #include <cstdlib>
 
 
@@ -44,7 +44,7 @@ namespace priv
 /// \brief Defines variables with thread-local storage
 ///
 ////////////////////////////////////////////////////////////
-class sfml_SYSTEM_API ThreadLocal : NonCopyable
+class SFML_SYSTEM_API ThreadLocal : NonCopyable
 {
 public :
 
@@ -89,7 +89,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_THREADLOCAL_HPP
+#endif // SFML_THREADLOCAL_HPP
 
 
 ////////////////////////////////////////////////////////////

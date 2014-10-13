@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_INPUTSTREAM_HPP
-#define sfml_INPUTSTREAM_HPP
+#ifndef SFML_INPUTSTREAM_HPP
+#define SFML_INPUTSTREAM_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Config.hpp>
+#include <SFML/Config.hpp>
 
 
 namespace sf
@@ -91,7 +91,7 @@ public :
 } // namespace sf
 
 
-#endif // sfml_INPUTSTREAM_HPP
+#endif // SFML_INPUTSTREAM_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -99,14 +99,14 @@ public :
 /// \ingroup system
 ///
 /// This class allows users to define their own file input sources
-/// from which sfml can load resources.
+/// from which SFML can load resources.
 ///
-/// sfml resource classes like sf::Texture and
+/// SFML resource classes like sf::Texture and
 /// sf::SoundBuffer provide loadFromFile and loadFromMemory functions,
 /// which read data from conventional sources. However, if you
 /// have data coming from a different source (over a network,
 /// embedded, encrypted, compressed, etc) you can derive your
-/// own class from sf::InputStream and load sfml resources with
+/// own class from sf::InputStream and load SFML resources with
 /// their loadFromStream function.
 ///
 /// Usage example:

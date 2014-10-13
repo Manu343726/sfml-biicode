@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_THREAD_HPP
-#define sfml_THREAD_HPP
+#ifndef SFML_THREAD_HPP
+#define SFML_THREAD_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/System/Export.hpp>
-#include <sfml/System/NonCopyable.hpp>
+#include <SFML/System/Export.hpp>
+#include <SFML/System/NonCopyable.hpp>
 #include <cstdlib>
 
 
@@ -45,7 +45,7 @@ namespace priv
 /// \brief Utility class to manipulate threads
 ///
 ////////////////////////////////////////////////////////////
-class sfml_SYSTEM_API Thread : NonCopyable
+class SFML_SYSTEM_API Thread : NonCopyable
 {
 public :
 
@@ -190,11 +190,11 @@ private :
     priv::ThreadFunc* m_entryPoint; ///< Abstraction of the function to run
 };
 
-#include <sfml/System/Thread.inl>
+#include <SFML/System/Thread.inl>
 
 } // namespace sf
 
-#endif // sfml_THREAD_HPP
+#endif // SFML_THREAD_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ private :
 /// that you can use several types of entry points:
 /// \li non-member functions with no argument
 /// \li non-member functions with one argument of any type
-/// \li functors with no argument (this one is particularly useful for compatibility with boost/std::bind)
+/// \li functors with no argument (this one is particularly useful for compatibility with boost/std::%bind)
 /// \li functors with one argument of any type
 /// \li member functions from any class with no argument
 ///

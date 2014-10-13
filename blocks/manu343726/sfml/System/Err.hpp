@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,28 +22,28 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_ERR_HPP
-#define sfml_ERR_HPP
+#ifndef SFML_ERR_HPP
+#define SFML_ERR_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/System/Export.hpp>
+#include <SFML/System/Export.hpp>
 #include <ostream>
 
 
 namespace sf
 {
 ////////////////////////////////////////////////////////////
-/// \brief Standard stream used by sfml to output warnings and errors
+/// \brief Standard stream used by SFML to output warnings and errors
 ///
 ////////////////////////////////////////////////////////////
-sfml_SYSTEM_API std::ostream& err();
+SFML_SYSTEM_API std::ostream& err();
 
 } // namespace sf
 
 
-#endif // sfml_ERR_HPP
+#endif // SFML_ERR_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -58,7 +58,7 @@ sfml_SYSTEM_API std::ostream& err();
 /// insertion operations defined by the STL
 /// (operator <<, manipulators, etc.).
 ///
-/// sf::err() can be redirected to write to another output, independantly
+/// sf::err() can be redirected to write to another output, independently
 /// of std::cerr, by using the rdbuf() function provided by the
 /// std::ostream class.
 ///
@@ -74,5 +74,7 @@ sfml_SYSTEM_API std::ostream& err();
 /// // Restore the original output
 /// sf::err().rdbuf(previous);
 /// \endcode
+///
+/// \return Reference to std::ostream representing the SFML error stream
 ///
 ////////////////////////////////////////////////////////////

@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,18 +22,18 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_FONT_HPP
-#define sfml_FONT_HPP
+#ifndef SFML_FONT_HPP
+#define SFML_FONT_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/Glyph.hpp>
-#include <sfml/Graphics/Texture.hpp>
-#include <sfml/Graphics/Rect.hpp>
-#include <sfml/System/Vector2.hpp>
-#include <sfml/System/String.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/Glyph.hpp>
+#include <SFML/Graphics/Texture.hpp>
+#include <SFML/Graphics/Rect.hpp>
+#include <SFML/System/Vector2.hpp>
+#include <SFML/System/String.hpp>
 #include <map>
 #include <string>
 #include <vector>
@@ -47,8 +47,19 @@ class InputStream;
 /// \brief Class for loading and manipulating character fonts
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API Font
+class SFML_GRAPHICS_API Font
 {
+public :
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Holds various information about a font
+    ///
+    ////////////////////////////////////////////////////////////
+    struct Info
+    {
+        std::string family; ///< The font family
+    };
+
 public :
 
     ////////////////////////////////////////////////////////////
@@ -98,7 +109,7 @@ public :
     ///
     /// The supported font formats are: TrueType, Type 1, CFF,
     /// OpenType, SFNT, X11 PCF, Windows FNT, BDF, PFR and Type 42.
-    /// Warning: sfml cannot preload all the font data in this
+    /// Warning: SFML cannot preload all the font data in this
     /// function, so the buffer pointed by \a data has to remain
     /// valid as long as the font is used.
     ///
@@ -117,7 +128,7 @@ public :
     ///
     /// The supported font formats are: TrueType, Type 1, CFF,
     /// OpenType, SFNT, X11 PCF, Windows FNT, BDF, PFR and Type 42.
-    /// Warning: sfml cannot preload all the font data in this
+    /// Warning: SFML cannot preload all the font data in this
     /// function, so the contents of \a stream have to remain
     /// valid as long as the font is used.
     ///
@@ -131,7 +142,19 @@ public :
     bool loadFromStream(InputStream& stream);
 
     ////////////////////////////////////////////////////////////
+    /// \brief Get the font information
+    ///
+    /// \return A structure that holds the font information
+    ///
+    ////////////////////////////////////////////////////////////
+    const Info& getInfo() const;
+
+    ////////////////////////////////////////////////////////////
     /// \brief Retrieve a glyph of the font
+    ///
+    /// If the font is a bitmap font, not all character sizes
+    /// might be available. If the glyph is not available at the
+    /// requested size, an empty glyph is returned.
     ///
     /// \param codePoint     Unicode code point of the character to get
     /// \param characterSize Reference character size
@@ -172,6 +195,35 @@ public :
     ///
     ////////////////////////////////////////////////////////////
     int getLineSpacing(unsigned int characterSize) const;
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Get the position of the underline
+    ///
+    /// Underline position is the vertical offset to apply between the
+    /// baseline and the underline.
+    ///
+    /// \param characterSize Reference character size
+    ///
+    /// \return Underline position, in pixels
+    ///
+    /// \see getUnderlineThickness
+    ///
+    ////////////////////////////////////////////////////////////
+    int getUnderlinePosition(unsigned int characterSize) const;
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Get the thickness of the underline
+    ///
+    /// Underline thickness is the vertical size of the underline.
+    ///
+    /// \param characterSize Reference character size
+    ///
+    /// \return Underline thickness, in pixels
+    ///
+    /// \see getUnderlinePosition
+    ///
+    ////////////////////////////////////////////////////////////
+    int getUnderlineThickness(unsigned int characterSize) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Retrieve the texture containing the loaded glyphs of a certain size
@@ -283,14 +335,18 @@ private :
     void*                      m_face;        ///< Pointer to the internal font face (it is typeless to avoid exposing implementation details)
     void*                      m_streamRec;   ///< Pointer to the stream rec instance (it is typeless to avoid exposing implementation details)
     int*                       m_refCount;    ///< Reference counter used by implicit sharing
+    Info                       m_info;        ///< Information about the font
     mutable PageTable          m_pages;       ///< Table containing the glyphs pages by character size
     mutable std::vector<Uint8> m_pixelBuffer; ///< Pixel buffer holding a glyph's pixels before being written to the texture
+    #ifdef SFML_SYSTEM_ANDROID
+    void*                      m_stream; ///< Asset file streamer (if loaded from file)
+    #endif
 };
 
 } // namespace sf
 
 
-#endif // sfml_FONT_HPP
+#endif // SFML_FONT_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -331,19 +387,19 @@ private :
 /// \code
 /// // Declare a new font
 /// sf::Font font;
-/// 
+///
 /// // Load it from a file
 /// if (!font.loadFromFile("arial.ttf"))
 /// {
 ///     // error...
 /// }
-/// 
+///
 /// // Create a text which uses our font
 /// sf::Text text1;
 /// text1.setFont(font);
 /// text1.setCharacterSize(30);
 /// text1.setStyle(sf::Text::Regular);
-/// 
+///
 /// // Create another text using the same font, but with different parameters
 /// sf::Text text2;
 /// text2.setFont(font);
@@ -355,6 +411,12 @@ private :
 /// of sf::Text, you should normally not have to deal directly
 /// with this class. However, it may be useful to access the
 /// font metrics or rasterized glyphs for advanced usage.
+///
+/// Note that if the font is a bitmap font, it is not scalable,
+/// thus not all requested sizes will be available to use. This
+/// needs to be taken into consideration when using sf::Text.
+/// If you need to display text of a certain size, make sure the
+/// corresponding bitmap font that supports that size is used.
 ///
 /// \see sf::Text
 ///

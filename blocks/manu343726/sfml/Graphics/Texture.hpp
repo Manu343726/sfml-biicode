@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,15 +22,15 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_TEXTURE_HPP
-#define sfml_TEXTURE_HPP
+#ifndef SFML_TEXTURE_HPP
+#define SFML_TEXTURE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/Image.hpp>
-#include <sfml/Window/GlResource.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/Image.hpp>
+#include <SFML/Window/GlResource.hpp>
 
 
 namespace sf
@@ -44,7 +44,7 @@ class InputStream;
 /// \brief Image living on the graphics card that can be used for drawing
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API Texture : GlResource
+class SFML_GRAPHICS_API Texture : GlResource
 {
 public :
 
@@ -109,7 +109,7 @@ public :
     /// of the whole image. If you want the entire image then leave
     /// the default value (which is an empty IntRect).
     /// If the \a area rectangle crosses the bounds of the image, it
-    /// is adjusted to fit the image size. 
+    /// is adjusted to fit the image size.
     ///
     /// The maximum size for a texture depends on the graphics
     /// driver and can be retrieved with the getMaximumSize function.
@@ -140,7 +140,7 @@ public :
     /// of the whole image. If you want the entire image then leave
     /// the default value (which is an empty IntRect).
     /// If the \a area rectangle crosses the bounds of the image, it
-    /// is adjusted to fit the image size. 
+    /// is adjusted to fit the image size.
     ///
     /// The maximum size for a texture depends on the graphics
     /// driver and can be retrieved with the getMaximumSize function.
@@ -172,7 +172,7 @@ public :
     /// of the whole image. If you want the entire image then leave
     /// the default value (which is an empty IntRect).
     /// If the \a area rectangle crosses the bounds of the image, it
-    /// is adjusted to fit the image size. 
+    /// is adjusted to fit the image size.
     ///
     /// The maximum size for a texture depends on the graphics
     /// driver and can be retrieved with the getMaximumSize function.
@@ -196,7 +196,7 @@ public :
     /// of the whole image. If you want the entire image then leave
     /// the default value (which is an empty IntRect).
     /// If the \a area rectangle crosses the bounds of the image, it
-    /// is adjusted to fit the image size. 
+    /// is adjusted to fit the image size.
     ///
     /// The maximum size for a texture depends on the graphics
     /// driver and can be retrieved with the getMaximumSize function.
@@ -424,7 +424,7 @@ public :
     /// \brief Bind a texture for rendering
     ///
     /// This function is not part of the graphics API, it mustn't be
-    /// used when drawing sfml entities. It must be used only if you
+    /// used when drawing SFML entities. It must be used only if you
     /// mix sf::Texture with OpenGL code.
     ///
     /// \code
@@ -443,7 +443,7 @@ public :
     /// must be in range [0 .. 1], which is the default way of handling
     /// texture coordinates with OpenGL. If Pixels, they must be given
     /// in pixels (range [0 .. size]). This mode is used internally by
-    /// the graphics classes of sfml, it makes the definition of texture
+    /// the graphics classes of SFML, it makes the definition of texture
     /// coordinates more intuitive for the high-level API, users don't need
     /// to compute normalized values.
     ///
@@ -459,6 +459,9 @@ public :
     /// This maximum size is defined by the graphics driver.
     /// You can expect a value of 512 pixels for low-end graphics
     /// card, and up to 8192 pixels or more for newer hardware.
+    ///
+    /// Note: The first call to this function, whether by your
+    /// code or SFML will result in a context switch.
     ///
     /// \return Maximum size allowed for textures, in pixels
     ///
@@ -478,7 +481,7 @@ private :
     /// accordingly.
     /// The returned size is greater than or equal to the original size.
     ///
-    /// \param Size size to convert
+    /// \param size size to convert
     ///
     /// \return Valid nearest size (greater than or equal to specified size)
     ///
@@ -500,7 +503,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_TEXTURE_HPP
+#endif // SFML_TEXTURE_HPP
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Texture
@@ -529,7 +532,7 @@ private :
 /// before creating the final texture, you can load your file to a
 /// sf::Image, do whatever you need with the pixels, and then call
 /// Texture::loadFromImage.
-/// 
+///
 /// Since they live in the graphics card memory, the pixels of a texture
 /// cannot be accessed without a slow copy first. And they cannot be
 /// accessed individually. Therefore, if you need to read the texture's

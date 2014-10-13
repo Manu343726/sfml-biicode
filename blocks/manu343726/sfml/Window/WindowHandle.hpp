@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,16 +22,16 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_WINDOWHANDLE_HPP
-#define sfml_WINDOWHANDLE_HPP
+#ifndef SFML_WINDOWHANDLE_HPP
+#define SFML_WINDOWHANDLE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Config.hpp>
+#include <SFML/Config.hpp>
 
 // Windows' HWND is a typedef on struct HWND__*
-#if defined(sfml_SYSTEM_WINDOWS)
+#if defined(SFML_SYSTEM_WINDOWS)
     struct HWND__;
 #endif
 
@@ -41,19 +41,29 @@ namespace sf
 /// Define a low-level window handle type, specific to
 /// each platform
 ////////////////////////////////////////////////////////////
-#if defined(sfml_SYSTEM_WINDOWS)
+#if defined(SFML_SYSTEM_WINDOWS)
 
     // Window handle is HWND (HWND__*) on Windows
     typedef HWND__* WindowHandle;
 
-#elif defined(sfml_SYSTEM_LINUX) || defined(sfml_SYSTEM_FREEBSD)
+#elif defined(SFML_SYSTEM_LINUX) || defined(SFML_SYSTEM_FREEBSD)
 
     // Window handle is Window (unsigned long) on Unix - X11
     typedef unsigned long WindowHandle;
 
-#elif defined(sfml_SYSTEM_MACOS)
+#elif defined(SFML_SYSTEM_MACOS)
 
     // Window handle is NSWindow (void*) on Mac OS X - Cocoa
+    typedef void* WindowHandle;
+
+#elif defined(SFML_SYSTEM_IOS)
+
+    // Window handle is UIWindow (void*) on iOS - UIKit
+    typedef void* WindowHandle;
+
+#elif defined(SFML_SYSTEM_ANDROID)
+
+    // Window handle is ANativeWindow (void*) on Android
     typedef void* WindowHandle;
 
 #endif
@@ -61,4 +71,4 @@ namespace sf
 } // namespace sf
 
 
-#endif // sfml_WINDOWHANDLE_HPP
+#endif // SFML_WINDOWHANDLE_HPP

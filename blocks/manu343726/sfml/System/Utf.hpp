@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_UTF_HPP
-#define sfml_UTF_HPP
+#ifndef SFML_UTF_HPP
+#define SFML_UTF_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Config.hpp>
+#include <SFML/Config.hpp>
 #include <algorithm>
 #include <locale>
 #include <string>
@@ -728,7 +728,7 @@ public :
     static Out encodeWide(Uint32 codepoint, Out output, wchar_t replacement = 0);
 };
 
-#include <sfml/System/Utf.inl>
+#include <SFML/System/Utf.inl>
 
 // Make typedefs to get rid of the template syntax
 typedef Utf<8>  Utf8;
@@ -738,7 +738,7 @@ typedef Utf<32> Utf32;
 } // namespace sf
 
 
-#endif // sfml_UTF_HPP
+#endif // SFML_UTF_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -752,7 +752,7 @@ typedef Utf<32> Utf32;
 /// to handle ANSI, wide, latin-1, UTF-8, UTF-16 and UTF-32 encodings.
 ///
 /// sf::Utf<X> functions are all static, these classes are not meant to
-/// be instanciated. All the functions are template, so that you
+/// be instantiated. All the functions are template, so that you
 /// can use any character / string type for a given encoding.
 ///
 /// It has 3 specializations:

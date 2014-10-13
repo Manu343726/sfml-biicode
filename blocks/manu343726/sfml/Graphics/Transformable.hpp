@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_TRANSFORMABLE_HPP
-#define sfml_TRANSFORMABLE_HPP
+#ifndef SFML_TRANSFORMABLE_HPP
+#define SFML_TRANSFORMABLE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/Transform.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/Transform.hpp>
 
 
 namespace sf
@@ -38,7 +38,7 @@ namespace sf
 /// \brief Decomposed transform defined by a position, a rotation and a scale
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API Transformable
+class SFML_GRAPHICS_API Transformable
 {
 public :
 
@@ -329,7 +329,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_TRANSFORMABLE_HPP
+#endif // SFML_TRANSFORMABLE_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -372,7 +372,7 @@ private :
 /// center, for example. To do such things, use sf::Transform directly.
 ///
 /// sf::Transformable can be used as a base class. It is often
-/// combined with sf::Drawable -- that's what sfml's sprites,
+/// combined with sf::Drawable -- that's what SFML's sprites,
 /// texts and shapes do.
 /// \code
 /// class MyEntity : public sf::Transformable, public sf::Drawable
@@ -412,6 +412,18 @@ private :
 /// };
 /// \endcode
 ///
+/// A note on coordinates and undistorted rendering: \n
+/// By default, SFML (or more exactly, OpenGL) may interpolate drawable objects  
+/// such as sprites or texts when rendering. While this allows transitions
+/// like slow movements or rotations to appear smoothly, it can lead to
+/// unwanted results in some cases, for example blurred or distorted objects.
+/// In order to render a sf::Drawable object pixel-perfectly, make sure
+/// the involved coordinates allow a 1:1 mapping of pixels in the window
+/// to texels (pixels in the texture). More specifically, this means:
+/// * The object's position, origin and scale have no fractional part
+/// * The object's and the view's rotation are a multiple of 90 degrees
+/// * The view's center and size have no fractional part
+/// 
 /// \see sf::Transform
 ///
 ////////////////////////////////////////////////////////////

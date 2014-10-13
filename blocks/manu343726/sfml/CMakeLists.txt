@@ -58,6 +58,12 @@ ADD_BIICODE_TARGETS()
 #     ...
 # endif()
 
+# Enable C++11:
+target_compile_options(${BII_LIB_TARGET} PUBLIC "-std=c++11")
+
+# Enable SFML static linking mode:
+target_compile_options(${BII_BLOCK_TARGETS} PUBLIC "-DSFML_STATIC")
+
 # SFML includes:
 
 set(SFML_INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/..)
@@ -134,6 +140,18 @@ endif()
 if(sfml-audio-lib) 
     message( STATUS "Ready to link with SFML audio library..." )
     TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${sfml-audio-lib})
+
+    FIND_LIBRARY(libsndfile
+             NAMES snd
+             PATHS ${SFML_LIBS_PATH} NO_DEFAULT_PATH)
+
+    FIND_LIBRARY(openal
+             NAMES openal
+             PATHS ${SFML_LIBS_PATH} NO_DEFAULT_PATH)
+
+    if(libsndfile AND openal)
+        TARGET_LINK_LIBRARIES(${BII_LIB_TARGET} PUBLIC ${libsndfile} ${openal})
+    endif()
 else()
     message( STATUS "SFML audio library not found or not being used" )
 endif()

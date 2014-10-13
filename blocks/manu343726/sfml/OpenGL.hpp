@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,21 +22,21 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_OPENGL_HPP
-#define sfml_OPENGL_HPP
+#ifndef SFML_OPENGL_HPP
+#define SFML_OPENGL_HPP
 
 
 ////////////////////////////////////////////////////////////
 /// Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Config.hpp>
+#include <SFML/Config.hpp>
 
 
 ////////////////////////////////////////////////////////////
 /// This file just includes the OpenGL (GL and GLU) headers,
 /// which have actually different paths on each system
 ////////////////////////////////////////////////////////////
-#if defined(sfml_SYSTEM_WINDOWS)
+#if defined(SFML_SYSTEM_WINDOWS)
 
     // The Visual C++ version of gl.h uses WINGDIAPI and APIENTRY but doesn't define them
     #ifdef _MSC_VER
@@ -46,17 +46,32 @@
     #include <GL/gl.h>
     #include <GL/glu.h>
 
-#elif defined(sfml_SYSTEM_LINUX) || defined(sfml_SYSTEM_FREEBSD)
+#elif defined(SFML_SYSTEM_LINUX) || defined(SFML_SYSTEM_FREEBSD)
 
-    #include <GL/gl.h>
-    #include <GL/glu.h>
+    #if defined(SFML_OPENGL_ES)
+        #include <GLES/gl.h>
+        #include <GLES/glext.h>
+    #else
+        #include <GL/gl.h>
+        #include <GL/glu.h>
+    #endif
 
-#elif defined(sfml_SYSTEM_MACOS)
+#elif defined(SFML_SYSTEM_MACOS)
 
     #include <OpenGL/gl.h>
     #include <OpenGL/glu.h>
 
+#elif defined (SFML_SYSTEM_IOS)
+
+    #include <OpenGLES/ES1/gl.h>
+    #include <OpenGLES/ES1/glext.h>
+
+#elif defined (SFML_SYSTEM_ANDROID)
+
+    #include <GLES/gl.h>
+    #include <GLES/glext.h>
+
 #endif
 
 
-#endif // sfml_OPENGL_HPP
+#endif // SFML_OPENGL_HPP

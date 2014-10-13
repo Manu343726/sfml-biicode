@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,24 +22,24 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_AUDIO_HPP
-#define sfml_AUDIO_HPP
+#ifndef SFML_AUDIO_HPP
+#define SFML_AUDIO_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
 
-#include <sfml/System.hpp>
-#include <sfml/Audio/Listener.hpp>
-#include <sfml/Audio/Music.hpp>
-#include <sfml/Audio/Sound.hpp>
-#include <sfml/Audio/SoundBuffer.hpp>
-#include <sfml/Audio/SoundBufferRecorder.hpp>
-#include <sfml/Audio/SoundRecorder.hpp>
-#include <sfml/Audio/SoundStream.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Audio/Listener.hpp>
+#include <SFML/Audio/Music.hpp>
+#include <SFML/Audio/Sound.hpp>
+#include <SFML/Audio/SoundBuffer.hpp>
+#include <SFML/Audio/SoundBufferRecorder.hpp>
+#include <SFML/Audio/SoundRecorder.hpp>
+#include <SFML/Audio/SoundStream.hpp>
 
 
-#endif // sfml_AUDIO_HPP
+#endif // SFML_AUDIO_HPP
 
 ////////////////////////////////////////////////////////////
 /// \defgroup audio Audio module

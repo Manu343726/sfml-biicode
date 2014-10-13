@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,15 +22,15 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_VERTEX_HPP
-#define sfml_VERTEX_HPP
+#ifndef SFML_VERTEX_HPP
+#define SFML_VERTEX_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/Color.hpp>
-#include <sfml/System/Vector2.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/Color.hpp>
+#include <SFML/System/Vector2.hpp>
 
 
 namespace sf
@@ -39,7 +39,7 @@ namespace sf
 /// \brief Define a point with color and texture coordinates
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API Vertex
+class SFML_GRAPHICS_API Vertex
 {
 public :
 
@@ -102,7 +102,7 @@ public :
 } // namespace sf
 
 
-#endif // sfml_VERTEX_HPP
+#endif // SFML_VERTEX_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -110,7 +110,7 @@ public :
 /// \ingroup graphics
 ///
 /// A vertex is an improved point. It has a position and other
-/// extra attributes that will be used for drawing: in sfml,
+/// extra attributes that will be used for drawing: in SFML,
 /// vertices also have a color and a pair of texture coordinates.
 ///
 /// The vertex is the building block of drawing. Everything which
@@ -119,7 +119,7 @@ public :
 /// are grouped to create even more complex 2D entities such as
 /// sprites, texts, etc.
 ///
-/// If you use the graphical entities of sfml (sprite, text, shape)
+/// If you use the graphical entities of SFML (sprite, text, shape)
 /// you won't have to deal with vertices directly. But if you want
 /// to define your own 2D entities, such as tiled maps or particle
 /// systems, using vertices will allow you to get maximum performances.

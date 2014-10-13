@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,13 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_JOYSTICK_HPP
-#define sfml_JOYSTICK_HPP
+#ifndef SFML_JOYSTICK_HPP
+#define SFML_JOYSTICK_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Window/Export.hpp>
+#include <SFML/Window/Export.hpp>
+#include <SFML/System/String.hpp>
 
 
 namespace sf
@@ -37,7 +38,7 @@ namespace sf
 /// \brief Give access to the real-time state of the joysticks
 ///
 ////////////////////////////////////////////////////////////
-class sfml_WINDOW_API Joystick
+class SFML_WINDOW_API Joystick
 {
 public :
 
@@ -53,7 +54,7 @@ public :
     };
 
     ////////////////////////////////////////////////////////////
-    /// \brief Axes supported by sfml joysticks
+    /// \brief Axes supported by SFML joysticks
     ///
     ////////////////////////////////////////////////////////////
     enum Axis
@@ -66,6 +67,19 @@ public :
         V,    ///< The V axis
         PovX, ///< The X axis of the point-of-view hat
         PovY  ///< The Y axis of the point-of-view hat
+    };
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Structure holding a joystick's identification
+    ///
+    ////////////////////////////////////////////////////////////
+    struct Identification
+    {
+        Identification();
+
+        sf::String   name;      ///< Name of the joystick
+        unsigned int vendorId;  ///< Manufacturer identifier
+        unsigned int productId; ///< Product identifier
     };
 
     ////////////////////////////////////////////////////////////
@@ -130,9 +144,19 @@ public :
     static float getAxisPosition(unsigned int joystick, Axis axis);
 
     ////////////////////////////////////////////////////////////
+    /// \brief Get the joystick information
+    ///
+    /// \param joystick Index of the joystick
+    ///
+    /// \return Structure containing joystick information.
+    ///
+    ////////////////////////////////////////////////////////////
+    static Identification getIdentification(unsigned int joystick);
+
+    ////////////////////////////////////////////////////////////
     /// \brief Update the states of all joysticks
     ///
-    /// This function is used internally by sfml, so you normally
+    /// This function is used internally by SFML, so you normally
     /// don't have to call it explicitely. However, you may need to
     /// call it if you have no window yet (or no window at all):
     /// in this case the joysticks states are not updated automatically.
@@ -144,7 +168,7 @@ public :
 } // namespace sf
 
 
-#endif // sfml_JOYSTICK_HPP
+#endif // SFML_JOYSTICK_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -153,7 +177,7 @@ public :
 ///
 /// sf::Joystick provides an interface to the state of the
 /// joysticks. It only contains static functions, so it's not
-/// meant to be instanciated. Instead, each joystick is identified
+/// meant to be instantiated. Instead, each joystick is identified
 /// by an index that is passed to the functions of this class.
 ///
 /// This class allows users to query the state of joysticks at any
@@ -167,7 +191,7 @@ public :
 /// moved, pressed or released when your window is out of focus
 /// and no event is triggered.
 ///
-/// sfml supports:
+/// SFML supports:
 /// \li 8 joysticks (sf::Joystick::Count)
 /// \li 32 buttons per joystick (sf::Joystick::ButtonCount)
 /// \li 8 axes per joystick (sf::Joystick::AxisCount)

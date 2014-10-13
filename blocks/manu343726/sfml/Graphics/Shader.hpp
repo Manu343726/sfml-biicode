@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,19 +22,19 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_SHADER_HPP
-#define sfml_SHADER_HPP
+#ifndef SFML_SHADER_HPP
+#define SFML_SHADER_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/Transform.hpp>
-#include <sfml/Graphics/Color.hpp>
-#include <sfml/Window/GlResource.hpp>
-#include <sfml/System/NonCopyable.hpp>
-#include <sfml/System/Vector2.hpp>
-#include <sfml/System/Vector3.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/Transform.hpp>
+#include <SFML/Graphics/Color.hpp>
+#include <SFML/Window/GlResource.hpp>
+#include <SFML/System/NonCopyable.hpp>
+#include <SFML/System/Vector2.hpp>
+#include <SFML/System/Vector3.hpp>
 #include <map>
 #include <string>
 
@@ -48,7 +48,7 @@ class Texture;
 /// \brief Shader class (vertex and fragment)
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API Shader : GlResource, NonCopyable
+class SFML_GRAPHICS_API Shader : GlResource, NonCopyable
 {
 public :
 
@@ -63,11 +63,20 @@ public :
     };
 
     ////////////////////////////////////////////////////////////
-    /// \brief Special type/value that can be passed to setParameter,
+    /// \brief Special type that can be passed to setParameter,
     ///        and that represents the texture of the object being drawn
+    ///
+    /// \see setParameter(const std::string&, CurrentTextureType)
     ///
     ////////////////////////////////////////////////////////////
     struct CurrentTextureType {};
+
+    ////////////////////////////////////////////////////////////
+    /// \brief Represents the texture of the object being drawn
+    ///
+    /// \see setParameter(const std::string&, CurrentTextureType)
+    ///
+    ////////////////////////////////////////////////////////////
     static CurrentTextureType CurrentTexture;
 
 public :
@@ -451,7 +460,7 @@ public :
     /// \brief Bind a shader for rendering
     ///
     /// This function is not part of the graphics API, it mustn't be
-    /// used when drawing sfml entities. It must be used only if you
+    /// used when drawing SFML entities. It must be used only if you
     /// mix sf::Shader with OpenGL code.
     ///
     /// \code
@@ -476,6 +485,9 @@ public :
     /// This function should always be called before using
     /// the shader features. If it returns false, then
     /// any attempt to use sf::Shader will fail.
+    ///
+    /// Note: The first call to this function, whether by your
+    /// code or SFML will result in a context switch.
     ///
     /// \return True if shaders are supported, false otherwise
     ///
@@ -535,7 +547,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_SHADER_HPP
+#endif // SFML_SHADER_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -557,7 +569,7 @@ private :
 /// Shaders are written in GLSL, which is a C-like
 /// language dedicated to OpenGL shaders. You'll probably
 /// need to learn its basics before writing your own shaders
-/// for sfml.
+/// for SFML.
 ///
 /// Like any C/C++ program, a shader has its own variables
 /// that you can set from your C++ application. sf::Shader
@@ -611,7 +623,7 @@ private :
 ///
 /// Shaders can also be used to apply global post-effects to the
 /// current contents of the target (like the old sf::PostFx class
-/// in sfml 1). This can be done in two different ways:
+/// in SFML 1). This can be done in two different ways:
 /// \li draw everything to a sf::RenderTexture, then draw it to
 ///     the main target using the shader
 /// \li draw everything directly to the main target, then use

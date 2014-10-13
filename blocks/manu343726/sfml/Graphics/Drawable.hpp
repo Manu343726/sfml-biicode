@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_DRAWABLE_HPP
-#define sfml_DRAWABLE_HPP
+#ifndef SFML_DRAWABLE_HPP
+#define SFML_DRAWABLE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/RenderStates.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/RenderStates.hpp>
 
 
 namespace sf
@@ -41,7 +41,7 @@ class RenderTarget;
 ///        to a render target
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API Drawable
+class SFML_GRAPHICS_API Drawable
 {
 public :
 
@@ -72,7 +72,7 @@ protected :
 } // namespace sf
 
 
-#endif // sfml_DRAWABLE_HPP
+#endif // SFML_DRAWABLE_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -88,7 +88,7 @@ protected :
 /// Note that inheriting from sf::Drawable is not mandatory,
 /// but it allows this nice syntax "window.draw(object)" rather
 /// than "object.draw(window)", which is more consistent with other
-/// sfml classes.
+/// SFML classes.
 ///
 /// Example:
 /// \code

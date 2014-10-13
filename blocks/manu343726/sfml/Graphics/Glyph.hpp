@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_GLYPH_HPP
-#define sfml_GLYPH_HPP
+#ifndef SFML_GLYPH_HPP
+#define SFML_GLYPH_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/Rect.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/Rect.hpp>
 
 
 namespace sf
@@ -38,7 +38,7 @@ namespace sf
 /// \brief Structure describing a glyph
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API Glyph
+class SFML_GRAPHICS_API Glyph
 {
 public :
 
@@ -59,7 +59,7 @@ public :
 } // namespace sf
 
 
-#endif // sfml_GLYPH_HPP
+#endif // SFML_GLYPH_HPP
 
 
 ////////////////////////////////////////////////////////////

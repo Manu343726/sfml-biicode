@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,14 +22,14 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_CLOCK_HPP
-#define sfml_CLOCK_HPP
+#ifndef SFML_CLOCK_HPP
+#define SFML_CLOCK_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/System/Export.hpp>
-#include <sfml/System/Time.hpp>
+#include <SFML/System/Export.hpp>
+#include <SFML/System/Time.hpp>
 
 
 namespace sf
@@ -38,7 +38,7 @@ namespace sf
 /// \brief Utility class that measures the elapsed time
 ///
 ////////////////////////////////////////////////////////////
-class sfml_SYSTEM_API Clock
+class SFML_SYSTEM_API Clock
 {
 public :
 
@@ -84,7 +84,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_CLOCK_HPP
+#endif // SFML_CLOCK_HPP
 
 
 ////////////////////////////////////////////////////////////

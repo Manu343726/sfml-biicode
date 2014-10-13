@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,16 +22,16 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_RENDERWINDOW_HPP
-#define sfml_RENDERWINDOW_HPP
+#ifndef SFML_RENDERWINDOW_HPP
+#define SFML_RENDERWINDOW_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/RenderTarget.hpp>
-#include <sfml/Graphics/Image.hpp>
-#include <sfml/Window/Window.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/RenderTarget.hpp>
+#include <SFML/Graphics/Image.hpp>
+#include <SFML/Window/Window.hpp>
 #include <string>
 
 
@@ -41,7 +41,7 @@ namespace sf
 /// \brief Window that can serve as a target for 2D drawing
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API RenderWindow : public Window, public RenderTarget
+class SFML_GRAPHICS_API RenderWindow : public Window, public RenderTarget
 {
 public :
 
@@ -49,7 +49,7 @@ public :
     /// \brief Default constructor
     ///
     /// This constructor doesn't actually create the window,
-    /// use the other constructors or call "create" to do so.
+    /// use the other constructors or call create() to do so.
     ///
     ////////////////////////////////////////////////////////////
     RenderWindow();
@@ -69,7 +69,7 @@ public :
     ///
     /// \param mode     Video mode to use (defines the width, height and depth of the rendering area of the window)
     /// \param title    Title of the window
-    /// \param style    Window style
+    /// \param style    %Window style, a bitwise OR combination of sf::Style enumerators
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
@@ -78,15 +78,16 @@ public :
     ////////////////////////////////////////////////////////////
     /// \brief Construct the window from an existing control
     ///
-    /// Use this constructor if you want to create an sfml
+    /// Use this constructor if you want to create an SFML
     /// rendering area into an already existing control.
     ///
-    /// The fourth parameter is an optional structure specifying
+    /// The second parameter is an optional structure specifying
     /// advanced OpenGL context settings such as antialiasing,
     /// depth-buffer bits, etc. You shouldn't care about these
     /// parameters for a regular usage of the graphics module.
     ///
-    /// \param handle   Platform-specific handle of the control
+    /// \param handle   Platform-specific handle of the control (\a HWND on
+    ///                 Windows, \a %Window on Linux/FreeBSD, \a NSWindow on OS X)
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
@@ -95,7 +96,7 @@ public :
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
     ///
-    /// Closes the window and free all the resources attached to it.
+    /// Closes the window and frees all the resources attached to it.
     ///
     ////////////////////////////////////////////////////////////
     virtual ~RenderWindow();
@@ -164,7 +165,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_RENDERWINDOW_HPP
+#endif // SFML_RENDERWINDOW_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -187,7 +188,7 @@ private :
 ///
 /// \code
 /// // Declare and create a new render-window
-/// sf::RenderWindow window(sf::VideoMode(800, 600), "sfml window");
+/// sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
 ///
 /// // Limit the framerate to 60 frames per second (this step is optional)
 /// window.setFramerateLimit(60);
@@ -219,11 +220,11 @@ private :
 ///
 /// Like sf::Window, sf::RenderWindow is still able to render direct
 /// OpenGL stuff. It is even possible to mix together OpenGL calls
-/// and regular sfml drawing commands.
+/// and regular SFML drawing commands.
 ///
 /// \code
 /// // Create the render window
-/// sf::RenderWindow window(sf::VideoMode(800, 600), "sfml OpenGL");
+/// sf::RenderWindow window(sf::VideoMode(800, 600), "SFML OpenGL");
 ///
 /// // Create a sprite and a text to display
 /// sf::Sprite sprite;

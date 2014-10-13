@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,47 +22,80 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_CONFIG_HPP
-#define sfml_CONFIG_HPP
+#ifndef SFML_CONFIG_HPP
+#define SFML_CONFIG_HPP
 
 
 ////////////////////////////////////////////////////////////
-// Define the sfml version
+// Define the SFML version
 ////////////////////////////////////////////////////////////
-#define sfml_VERSION_MAJOR 2
-#define sfml_VERSION_MINOR 1
+#define SFML_VERSION_MAJOR 2
+#define SFML_VERSION_MINOR 1
 
 
 ////////////////////////////////////////////////////////////
 // Identify the operating system
+// see http://nadeausoftware.com/articles/2012/01/c_c_tip_how_use_compiler_predefined_macros_detect_operating_system
 ////////////////////////////////////////////////////////////
-#if defined(_WIN32) || defined(__WIN32__)
+#if defined(_WIN32)
 
     // Windows
-    #define sfml_SYSTEM_WINDOWS
+    #define SFML_SYSTEM_WINDOWS
     #ifndef NOMINMAX
         #define NOMINMAX
     #endif
 
-#elif defined(linux) || defined(__linux)
+#elif defined(__APPLE__) && defined(__MACH__)
 
-    // Linux
-    #define sfml_SYSTEM_LINUX
+    // Apple platform, see which one it is
+    #include "TargetConditionals.h"
 
-#elif defined(__APPLE__) || defined(MACOSX) || defined(macintosh) || defined(Macintosh)
+    #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 
-    // MacOS
-    #define sfml_SYSTEM_MACOS
+        // iOS
+        #define SFML_SYSTEM_IOS
 
-#elif defined(__FreeBSD__) || defined(__FreeBSD_kernel__)
+    #elif TARGET_OS_MAC
 
-    // FreeBSD
-    #define sfml_SYSTEM_FREEBSD
+        // MacOS
+        #define SFML_SYSTEM_MACOS
+
+    #else
+
+        // Unsupported Apple system
+        #error This Apple operating system is not supported by SFML library
+
+    #endif
+
+#elif defined(__unix__)
+
+    // UNIX system, see which one it is
+    #if defined(__ANDROID__)
+
+        // Android
+        #define SFML_SYSTEM_ANDROID
+
+    #elif defined(__linux__)
+
+         // Linux
+        #define SFML_SYSTEM_LINUX
+
+    #elif defined(__FreeBSD__) || defined(__FreeBSD_kernel__)
+
+        // FreeBSD
+        #define SFML_SYSTEM_FREEBSD
+
+    #else
+
+        // Unsupported UNIX system
+        #error This UNIX operating system is not supported by SFML library
+
+    #endif
 
 #else
 
     // Unsupported system
-    #error This operating system is not supported by sfml library
+    #error This operating system is not supported by SFML library
 
 #endif
 
@@ -72,7 +105,7 @@
 ////////////////////////////////////////////////////////////
 #if !defined(NDEBUG)
 
-    #define sfml_DEBUG
+    #define SFML_DEBUG
 
 #endif
 
@@ -80,13 +113,13 @@
 ////////////////////////////////////////////////////////////
 // Define helpers to create portable import / export macros for each module
 ////////////////////////////////////////////////////////////
-#if !defined(sfml_STATIC)
+#if !defined(SFML_STATIC)
 
-    #if defined(sfml_SYSTEM_WINDOWS)
+    #if defined(SFML_SYSTEM_WINDOWS)
 
         // Windows compilers need specific (and different) keywords for export and import
-        #define sfml_API_EXPORT __declspec(dllexport)
-        #define sfml_API_IMPORT __declspec(dllimport)
+        #define SFML_API_EXPORT __declspec(dllexport)
+        #define SFML_API_IMPORT __declspec(dllimport)
 
         // For Visual C++ compilers, we also need to turn off this annoying C4251 warning
         #ifdef _MSC_VER
@@ -101,14 +134,14 @@
 
             // GCC 4 has special keywords for showing/hidding symbols,
             // the same keyword is used for both importing and exporting
-            #define sfml_API_EXPORT __attribute__ ((__visibility__ ("default")))
-            #define sfml_API_IMPORT __attribute__ ((__visibility__ ("default")))
+            #define SFML_API_EXPORT __attribute__ ((__visibility__ ("default")))
+            #define SFML_API_IMPORT __attribute__ ((__visibility__ ("default")))
 
         #else
 
             // GCC < 4 has no mechanism to explicitely hide symbols, everything's exported
-            #define sfml_API_EXPORT
-            #define sfml_API_IMPORT
+            #define SFML_API_EXPORT
+            #define SFML_API_IMPORT
 
         #endif
 
@@ -117,8 +150,8 @@
 #else
 
     // Static build doesn't need import/export macros
-    #define sfml_API_EXPORT
-    #define sfml_API_IMPORT
+    #define SFML_API_EXPORT
+    #define SFML_API_IMPORT
 
 #endif
 
@@ -156,4 +189,4 @@ namespace sf
 } // namespace sf
 
 
-#endif // sfml_CONFIG_HPP
+#endif // SFML_CONFIG_HPP

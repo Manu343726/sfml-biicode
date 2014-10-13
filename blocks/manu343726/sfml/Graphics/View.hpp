@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,16 +22,16 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_VIEW_HPP
-#define sfml_VIEW_HPP
+#ifndef SFML_VIEW_HPP
+#define SFML_VIEW_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/Graphics/Export.hpp>
-#include <sfml/Graphics/Rect.hpp>
-#include <sfml/Graphics/Transform.hpp>
-#include <sfml/System/Vector2.hpp>
+#include <SFML/Graphics/Export.hpp>
+#include <SFML/Graphics/Rect.hpp>
+#include <SFML/Graphics/Transform.hpp>
+#include <SFML/System/Vector2.hpp>
 
 
 namespace sf
@@ -40,7 +40,7 @@ namespace sf
 /// \brief 2D camera that defines what region is shown on screen
 ///
 ////////////////////////////////////////////////////////////
-class sfml_GRAPHICS_API View
+class SFML_GRAPHICS_API View
 {
 public :
 
@@ -282,7 +282,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_VIEW_HPP
+#endif // SFML_VIEW_HPP
 
 
 ////////////////////////////////////////////////////////////
@@ -335,6 +335,8 @@ private :
 /// // Render stuff not affected by the view
 /// window.draw(someText);
 /// \endcode
+///
+/// See also the note on coordinates and undistorted rendering in sf::Transformable.
 ///
 /// \see sf::RenderWindow, sf::RenderTexture
 ///

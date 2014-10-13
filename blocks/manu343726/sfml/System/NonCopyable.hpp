@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
-// sfml - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2013 Laurent Gomila (laurent.gom@gmail.com)
+// SFML - Simple and Fast Multimedia Library
+// Copyright (C) 2007-2014 Laurent Gomila (laurent.gom@gmail.com)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -22,13 +22,13 @@
 //
 ////////////////////////////////////////////////////////////
 
-#ifndef sfml_NONCOPYABLE_HPP
-#define sfml_NONCOPYABLE_HPP
+#ifndef SFML_NONCOPYABLE_HPP
+#define SFML_NONCOPYABLE_HPP
 
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <sfml/System/Export.hpp>
+#include <SFML/System/Export.hpp>
 
 
 namespace sf
@@ -38,7 +38,7 @@ namespace sf
 ///        class non-copyable
 ///
 ////////////////////////////////////////////////////////////
-class sfml_SYSTEM_API NonCopyable
+class SFML_SYSTEM_API NonCopyable
 {
 protected :
 
@@ -82,7 +82,7 @@ private :
 } // namespace sf
 
 
-#endif // sfml_NONCOPYABLE_HPP
+#endif // SFML_NONCOPYABLE_HPP
 
 
 ////////////////////////////////////////////////////////////
