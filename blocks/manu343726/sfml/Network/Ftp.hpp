@@ -28,10 +28,10 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Network/Export.hpp>
-#include <SFML/Network/TcpSocket.hpp>
-#include <SFML/System/NonCopyable.hpp>
-#include <SFML/System/Time.hpp>
+#include <sfml/Network/Export.hpp>
+#include <sfml/Network/TcpSocket.hpp>
+#include <sfml/System/NonCopyable.hpp>
+#include <sfml/System/Time.hpp>
 #include <string>
 #include <vector>
 

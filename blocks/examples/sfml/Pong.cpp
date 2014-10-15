@@ -2,8 +2,8 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <manu343726/SFML/Graphics.hpp>
-#include <manu343726/SFML/Audio.hpp>
+#include <manu343726/sfml/Graphics.hpp>
+#include <manu343726/sfml/Audio.hpp>
 #include <cmath>
 #include <ctime>
 #include <cstdlib>

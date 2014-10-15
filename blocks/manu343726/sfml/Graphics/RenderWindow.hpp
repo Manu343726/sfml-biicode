@@ -28,10 +28,10 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/RenderTarget.hpp>
-#include <SFML/Graphics/Image.hpp>
-#include <SFML/Window/Window.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/RenderTarget.hpp>
+#include <sfml/Graphics/Image.hpp>
+#include <sfml/Window/Window.hpp>
 #include <string>
 
 

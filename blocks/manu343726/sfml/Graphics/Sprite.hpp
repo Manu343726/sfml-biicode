@@ -28,11 +28,11 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Drawable.hpp>
-#include <SFML/Graphics/Transformable.hpp>
-#include <SFML/Graphics/Vertex.hpp>
-#include <SFML/Graphics/Rect.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Drawable.hpp>
+#include <sfml/Graphics/Transformable.hpp>
+#include <sfml/Graphics/Vertex.hpp>
+#include <sfml/Graphics/Rect.hpp>
 
 
 namespace sf

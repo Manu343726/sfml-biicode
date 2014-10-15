@@ -28,9 +28,9 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Color.hpp>
-#include <SFML/Graphics/Rect.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Color.hpp>
+#include <sfml/Graphics/Rect.hpp>
 #include <string>
 #include <vector>
 

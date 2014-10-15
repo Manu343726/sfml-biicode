@@ -28,8 +28,8 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Audio/Export.hpp>
-#include <SFML/System/Time.hpp>
+#include <sfml/Audio/Export.hpp>
+#include <sfml/System/Time.hpp>
 #include <string>
 #include <vector>
 #include <set>

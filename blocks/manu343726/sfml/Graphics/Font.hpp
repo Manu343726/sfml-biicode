@@ -28,12 +28,12 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Glyph.hpp>
-#include <SFML/Graphics/Texture.hpp>
-#include <SFML/Graphics/Rect.hpp>
-#include <SFML/System/Vector2.hpp>
-#include <SFML/System/String.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Glyph.hpp>
+#include <sfml/Graphics/Texture.hpp>
+#include <sfml/Graphics/Rect.hpp>
+#include <sfml/System/Vector2.hpp>
+#include <sfml/System/String.hpp>
 #include <map>
 #include <string>
 #include <vector>

@@ -28,8 +28,8 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Shape.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Shape.hpp>
 #include <vector>
 
 

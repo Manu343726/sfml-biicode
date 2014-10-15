@@ -29,20 +29,20 @@
 // Headers
 ////////////////////////////////////////////////////////////
 
-#include <SFML/Config.hpp>
-#include <SFML/System/Clock.hpp>
-#include <SFML/System/Err.hpp>
-#include <SFML/System/InputStream.hpp>
-#include <SFML/System/Lock.hpp>
-#include <SFML/System/Mutex.hpp>
-#include <SFML/System/Sleep.hpp>
-#include <SFML/System/String.hpp>
-#include <SFML/System/Thread.hpp>
-#include <SFML/System/ThreadLocal.hpp>
-#include <SFML/System/ThreadLocalPtr.hpp>
-#include <SFML/System/Utf.hpp>
-#include <SFML/System/Vector2.hpp>
-#include <SFML/System/Vector3.hpp>
+#include <sfml/Config.hpp>
+#include <sfml/System/Clock.hpp>
+#include <sfml/System/Err.hpp>
+#include <sfml/System/InputStream.hpp>
+#include <sfml/System/Lock.hpp>
+#include <sfml/System/Mutex.hpp>
+#include <sfml/System/Sleep.hpp>
+#include <sfml/System/String.hpp>
+#include <sfml/System/Thread.hpp>
+#include <sfml/System/ThreadLocal.hpp>
+#include <sfml/System/ThreadLocalPtr.hpp>
+#include <sfml/System/Utf.hpp>
+#include <sfml/System/Vector2.hpp>
+#include <sfml/System/Vector3.hpp>
 
 #endif // SFML_SYSTEM_HPP
 

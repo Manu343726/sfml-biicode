@@ -2,8 +2,8 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <manu343726/SFML/Graphics.hpp>
-#include <manu343726/SFML/OpenGL.hpp>
+#include <manu343726/sfml/Graphics.hpp>
+#include <manu343726/sfml/OpenGL.hpp>
 
 
 //Path to the resources folder of this example

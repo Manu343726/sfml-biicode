@@ -28,8 +28,8 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Rect.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Rect.hpp>
 
 
 namespace sf

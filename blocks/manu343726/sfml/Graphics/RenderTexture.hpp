@@ -28,9 +28,9 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Graphics/Export.hpp>
-#include <SFML/Graphics/Texture.hpp>
-#include <SFML/Graphics/RenderTarget.hpp>
+#include <sfml/Graphics/Export.hpp>
+#include <sfml/Graphics/Texture.hpp>
+#include <sfml/Graphics/RenderTarget.hpp>
 
 
 namespace sf

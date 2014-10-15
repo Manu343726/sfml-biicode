@@ -28,8 +28,8 @@
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include <SFML/Network/Export.hpp>
-#include <SFML/System/Time.hpp>
+#include <sfml/Network/Export.hpp>
+#include <sfml/System/Time.hpp>
 #include <istream>
 #include <ostream>
 #include <string>
