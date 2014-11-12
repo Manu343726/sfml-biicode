@@ -21,15 +21,15 @@ This block includes the following examples:
 
  - **[`Ftp.cpp`]()**: FTP server connection example. 
 
- Supported platforms
- -------------------
+Supported platforms
+-------------------
 
- Those examples are designed to be fully portable, but the `manu343726/sfml` block is an experiment to test binary deployment with biicode. Only a limited number of platforms are supported since only a limited set of binaries were compiled.
+Those examples are designed to be fully portable, but the `manu343726/sfml` block is an experiment to test binary deployment with biicode. Only a limited number of platforms are supported since only a limited set of binaries were compiled.
 
- At this time the block includes binaries for the following platforms:
+At this time the block includes binaries for the following platforms:
 
-  - Windows x64 MinGW GCC 4.9.1 release.
-  - Linux x64 GCC 4.9.1 release.
+ - Windows x64 MinGW GCC 4.9.1 release.
+ - Linux x64 GCC 4.9.1 release.
 
 But you can improve the block including more binaries! Just compile SFML on your target platform and include the generated binaries on the `lib/` directory of the block, following the platform directory hierarchy. Also toggle the `CMakeLists.txt` file of the block to take care of your new platform.
 
