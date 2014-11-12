@@ -17,9 +17,9 @@ This block includes the following examples:
 
  - **[`Shader.cpp`]()**: Some shader examples. Exactly as in the previous example, to make it work with biicode explicit references to the assets used by the example (Shader files, textures, etc) were included, and the path to that resources was changed to follow the biicode data deps path.
 
-  - **[`OpenGL.cpp`]()**: Raw OpenGL usage through SFML. Similar changes for assets were done.
+ - **[`OpenGL.cpp`]()**: Raw OpenGL usage through SFML. Similar changes for assets were done.
 
-   - **[`Ftp.cpp`]()**: FTP server connection example. 
+ - **[`Ftp.cpp`]()**: FTP server connection example. 
 
  Supported platforms
  -------------------
