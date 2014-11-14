@@ -19,7 +19,7 @@ This block includes the following examples:
 
  - **[`Ftp.cpp`](http://www.biicode.com/examples/examples/sfml/master/5/Ftp.cpp)**: FTP server connection example. 
 
-![sfml-linux](https://lh3.googleusercontent.com/-ONNyD_z5oTo/VD4-SPkMgVI/AAAAAAAAAlY/bVz_Zm92uWA/w1140-h698-no/ponglin64.png)
+![sfml-linux](https://lh3.googleusercontent.com/-ONNyD_z5oTo/VD4-SPkMgVI/AAAAAAAAAlY/bVz_Zm92uWA/w1140-h698-no/ponglin64.png)  
 *The `Pong.cpp` example running on Manjaro Linux x64*
 
 Supported platforms
@@ -32,7 +32,7 @@ At this time the block includes binaries for the following platforms:
  - Windows x64 MinGW GCC 4.9.1 release.
  - Linux x64 GCC 4.9.1 release.
 
-![sfml-windows](https://pbs.twimg.com/media/Bz2nTNMIIAAhLUC.jpg)
+![sfml-windows](https://pbs.twimg.com/media/Bz2nTNMIIAAhLUC.jpg)  
 *The `Shader.cpp` example running on Windows 7 x64.*
 
 But you can improve the block including more binaries! Just compile SFML on your target platform and include the generated binaries on the `lib/` directory of the block, following the platform directory hierarchy. Also toggle the `CMakeLists.txt` file of the block to take care of your new platform.
